@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>renosoft - our works</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style_content.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+</head>
+
+<body class="works">
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="menu-mobile">
+        <ion-icon name="menu" class="i-menu"></ion-icon>
+        <aside>
+            <ion-icon name="close" class="close"></ion-icon>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <div class="logo">
+        <span>renosoft</span>
+    </div>
+    <div class="content">
+        <h1 class="heading">
+            <span>Our Works</span>
+        </h1>
+    </div>
+
+    <section>
+
+        <div class="text-slider-wrapper">
+            <div class="text-slider">
+                <h2 class="text-slide">웰스토리 모바일오피스<br>어플리케이션 구축</h2>
+                <h2 class="text-slide">르노삼성 챗봇 개발</h2>
+                <h2 class="text-slide">세번째 프로젝트</h2>
+                <h2 class="text-slide">네번째 프로젝트</h2>
+            </div>
+        </div>
+
+        <div class="slider-control">
+            <div class="prev"><button type="button">
+                    <ion-icon name="arrow-back"></ion-icon>
+                </button></div>
+            <div class="next"><button type="button">
+                    <ion-icon name="arrow-forward"></ion-icon>
+                </button></div>
+        </div>
+
+        <div class="blocks">
+            <div class="block-1"></div>
+            <div class="block-2"></div>
+            <div class="block-3"></div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="image-slider" onclick="modal('timeline')">
+            <div class="image-slide" id="one"
+                style="background: url(./images/works/welstory.jpg) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="two"
+                style="background: url(./images/works/rsm.jpg) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="three"
+                style="background: url(./images/works/welstory.jpg) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="four"
+                style="background: url(./images/works/rsm.jpg) no-repeat 50% 50%; background-size: cover;"></div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal modal-timeline">
+        <iframe src="timeline.html" frameborder="0"></iframe>
+    </div><!-- end Modal -->
+    <div class="modal-backdrop"></div>
+
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/TweenMax.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        TweenMax.from(".logo", 1.6, {
+            delay: .4,
+            opacity: 0,
+            y: 30,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".menu", 1.6, {
+            delay: .5,
+            opacity: 0,
+            y: 30,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".heading", 1.6, {
+            delay: .6,
+            opacity: 0,
+            y: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".desc", 1.6, {
+            delay: .7,
+            opacity: 0,
+            y: 30,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from("button", 1.6, {
+            delay: .8,
+            opacity: 0,
+            y: 30,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".watch", 1.6, {
+            delay: .9,
+            opacity: 0,
+            y: 30,
+            rotation: 90,
+            ease: Expo.easeInOut
+        });
+    </script>
+    <script>
+        var sickPrimary = {
+            autoplay: true,
+            autoplaySpeed: 2400,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            speed: 1800,
+            cssEase: 'cubic-bezier(.84, 0, .08, .99)',
+            asNavFor: '.text-slider',
+            centerMode: true,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next')
+        }
+
+        var sickSecondary = {
+            autoplay: true,
+            autoplaySpeed: 2400,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 1800,
+            cssEase: 'cubic-bezier(.84, 0, .08, .99)',
+            asNavFor: '.image-slider',
+            prevArrow: $('.prev'),
+            nextArrow: $('.next')
+        }
+
+        $('.image-slider').slick(sickPrimary);
+        $('.text-slider').slick(sickSecondary);
+    </script>
+</body>
+
+</html>
