@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>renosoft - contact us</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style_content.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+</head>
+
+<body class="contact">
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <li class="cursor"></li>
+    <div class="menu-mobile">
+        <ion-icon name="menu" class="i-menu"></ion-icon>
+        <aside>
+            <ion-icon name="close" class="close"></ion-icon>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <div class="logo">
+        <a href="index.html">renosoft</a>
+    </div>
+    <div class="content">
+        <h1 class="heading">
+            <span>Contact Us</span>
+        </h1>
+    </div>
+
+    <section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.0168174785335!2d127.09071381558519!3d37.41307739065892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca766d3607a27%3A0x2ae8e2b007da24ad!2z6rK96riw6riw7JeF7ISx7J6l7IS87YSw!5e0!3m2!1sko!2skr!4v1575860230285!5m2!1sko!2skr"
+            width="800" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <form>
+            <div>
+                <label for="name">name</label>
+                <input id="name" type="text" />
+            </div>
+            <div>
+                <label for="email">email</label>
+                <input id="email" type="email" />
+            </div>
+            <div>
+                <label for="message">message</label>
+                <textarea id="message" rows="3"></textarea>
+            </div>
+            <div>
+                <span></span>
+                <button>send now</button>
+            </div>
+        </form>
+    </section>
+    <canvas class="js-canvas"></canvas>
+
+    <!-- Modal -->
+    <div class="modal modal-timeline">
+        <iframe src="timeline.html" frameborder="0"></iframe>
+    </div><!-- end Modal -->
+    <div class="modal-backdrop"></div>
+
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/TweenMax.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        TweenMax.from(".logo", 1.6, {
+            delay: .4,
+            opacity: 0,
+            y: 30,
+            ease: Expo.easeInOut
+        });
+        TweenMax.staggerFrom(".menu li", 2, {
+            delay: .5,
+            opacity: 0,
+            y: -20,
+            ease: Expo.easeInOut
+        }, .2);
+        TweenMax.from(".heading", 1.6, {
+            delay: .6,
+            opacity: 0,
+            y: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".desc", 1.6, {
+            delay: .7,
+            opacity: 0,
+            y: 30,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from("button", 1.6, {
+            delay: .8,
+            opacity: 0,
+            y: 30,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".watch", 1.6, {
+            delay: .9,
+            opacity: 0,
+            y: 30,
+            rotation: 90,
+            ease: Expo.easeInOut
+        });
+    </script>
+</body>
+
+</html>

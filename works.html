@@ -15,26 +15,26 @@
 
 <body class="works">
     <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="work.html">Work</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="works.html">Works</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="menu-mobile">
         <ion-icon name="menu" class="i-menu"></ion-icon>
         <aside>
             <ion-icon name="close" class="close"></ion-icon>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="works.html">Works</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </aside>
     </div>
 
     <div class="logo">
-        <span>renosoft</span>
+        <a href="index.html">renosoft</a>
     </div>
     <div class="content">
         <h1 class="heading">
@@ -81,6 +81,7 @@
                 style="background: url(./images/works/rsm.jpg) no-repeat 50% 50%; background-size: cover;"></div>
         </div>
     </section>
+    <canvas class="js-canvas"></canvas>
 
     <!-- Modal -->
     <div class="modal modal-timeline">
@@ -100,12 +101,12 @@
             y: 30,
             ease: Expo.easeInOut
         });
-        TweenMax.from(".menu", 1.6, {
+        TweenMax.staggerFrom(".menu li", 2, {
             delay: .5,
             opacity: 0,
-            y: 30,
+            y: -20,
             ease: Expo.easeInOut
-        });
+        }, .2);
         TweenMax.from(".heading", 1.6, {
             delay: .6,
             opacity: 0,

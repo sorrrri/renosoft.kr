@@ -27,18 +27,18 @@
     </div>
     <div class="third-block"></div>
     <ul class="menu">
-        <li><a href="#">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="works.html">Works</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="menu-mobile">
         <ion-icon name="menu" class="i-menu"></ion-icon>
         <aside>
             <ion-icon name="close" class="close"></ion-icon>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="work.html">Work</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="works.html">Work</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -46,7 +46,7 @@
     </div>
 
     <div class="logo">
-        <span>renosoft</span>
+        <a href="index.html">renosoft</a>
     </div>
     <div class="content">
         <h1 class="heading">
@@ -59,7 +59,7 @@
 
         </div>
         <div class="link">
-            <button type="button" onclick="location.href='work.html'">VISIT NOW</button>
+            <button type="button" onclick="location.href='works.html'">VISIT NOW</button>
         </div>
     </div>
     <div class="media">
@@ -75,9 +75,12 @@
             </li>
         </ul>
     </div>
+    <canvas class="js-canvas"></canvas>
+
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/TweenMax.min.js"></script>
+    <script src="./js/script.js"></script>
     <script>
         $('.menu').click(function () {
             $('aside').addClass('active');
