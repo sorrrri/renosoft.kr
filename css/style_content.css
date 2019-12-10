@@ -1,5 +1,8 @@
-section { z-index:0; position: absolute; right:-70%; width: 70%; height: 100vh; background: #F0F0F0; animation: expandNow 1.4s cubic-bezier(0.19, 1, 0.22, 1) forwards } 
+section { right:-70%; width: 70%; height: 100vh; background: #F0F0F0 } 
 
+@media screen and (max-width:1500px){
+ .content { left:15% } 
+ }
 
 @keyframes go-left { 
  0% { left: 0; width: 0% } 
@@ -7,8 +10,8 @@ section { z-index:0; position: absolute; right:-70%; width: 70%; height: 100vh; 
  100% { left: 100%; width: 0 } 
  }
 
- @keyframes expandNow { 
- 0% { right: -64% } 
+ @keyframes expandSection { 
+ 0% { right: -70% } 
  100% { right: 0% } 
  }
 
@@ -28,11 +31,14 @@ section { z-index:0; position: absolute; right:-70%; width: 70%; height: 100vh; 
 .works .text-slider { margin: 0%; padding: 0%; height: 100vh; } 
 .works .text-slide { color: #fff; font-weight: lighter; padding-left: 10%; } 
 
-.contact form { padding:2rem; border-radius:.5rem; background-color: rgba(255,255,255,.5); position: absolute; right: 1rem; top: 50%; transform: translate(-50%, -50%); width: 60%; max-width:500px; margin: 0 auto; left: 50%; } 
-.contact form div { display: flex; justify-content: space-between; margin-bottom:2rem } 
-.contact form label { color: #A3A6A9 } 
-.contact form input, textarea { min-width: 300px; border:0; outline:0; border-radius:3px; padding:1rem; background: white } 
-.contact form textarea { resize: none; } 
+.contact .location { height:100vh } 
+.contact .information { display: flex; justify-content: space-around; font-family: 'NanumSquare'; background-color: rgba(0,0,0,.9); position: absolute; bottom: 0; width: 100%; } 
+
+.contact .information div { padding:2rem } 
+.contact .information small { color: #737679; display:block; margin-bottom:.5rem } 
+.contact .information ul { margin-bottom: 1rem } 
+.contact .information ul li { line-height: 1.5; word-break: keep-all; color: white } 
+.contact .information a { color: white } 
 
 @media(max-width: 990px){
  .works .block-2, .overlay { display: none; } 

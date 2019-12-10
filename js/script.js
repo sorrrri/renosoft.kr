@@ -1,13 +1,4 @@
 
-$('.menu-mobile').click(function () {
-  $(".modal-backdrop").addClass("active");
-  $('aside').addClass('active');
-  $('.close').css("transform", "rotate(180deg)");
-  $('.close').css("transition", ".6s");
-});
-$('.close').click(function () {
-  $('aside').removeClass('active');
-})
 
 
 // Modal
@@ -24,7 +15,16 @@ $(".modal-backdrop").on("click", function () {
   $(".modal-backdrop, aside, .modal").removeClass("active");
 });
 
+$(".close").on("click", function () {
+  $("aside, .modal-backdrop").removeClass("active");
+});
 
+$('.i-menu').click(function () {
+  $(".modal-backdrop").addClass("active");
+  $('aside').addClass('active');
+  $('.close').css("transform", "rotate(180deg)");
+  $('.close').css("transition", ".6s");
+});
 
 const canvas = document.querySelector('.js-canvas');
 const ctx = canvas.getContext('2d');
@@ -41,7 +41,7 @@ let circle = {
   lastY: mouseY };
 
 
-const elems = [...document.querySelectorAll('a, button')];
+const elems = [...document.querySelectorAll('a, button, ion-icon')];
 
 function onResize() {
   width = canvas.width = window.innerWidth;

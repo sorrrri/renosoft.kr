@@ -14,6 +14,15 @@
 </head>
 
 <body class="contact">
+        <div class="grid">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     <ul class="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="works.html">Works</a></li>
@@ -35,36 +44,42 @@
     </div>
 
     <div class="logo">
-        <a href="index.html">renosoft</a>
+        <a href="index.html"></a>
     </div>
     <div class="content">
         <h1 class="heading">
             <span>Contact Us</span>
         </h1>
+        <div class="desc">
+            <a href="mailto:renosoft@renosoft.kr">renosoft@renosoft.kr</a>
+        </div>
     </div>
 
     <section>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.0168174785335!2d127.09071381558519!3d37.41307739065892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca766d3607a27%3A0x2ae8e2b007da24ad!2z6rK96riw6riw7JeF7ISx7J6l7IS87YSw!5e0!3m2!1sko!2skr!4v1575860230285!5m2!1sko!2skr"
-            width="800" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        <form>
+        <div class="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12676.335222433147!2d127.08755195286481!3d37.41149399999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ae8e2b007da24ad!2z6rK96riw6riw7JeF7ISx7J6l7IS87YSw!5e0!3m2!1sko!2skr!4v1575945519541!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <div class="information">
             <div>
-                <label for="name">name</label>
-                <input id="name" type="text" />
+                <small>채용, 대외홍보, 사업 문의</small>
+                <ul>
+                    <li><a href="mailto:renosoft@renosoft.kr">renosoft@renosoft.kr</a></li>
+                    <li>전화 : 031-751-4234 </li>
+                    <li>팩스 : 031-751-4235</li>
+                    <li>담당자 : 안덕곤 (010-2677-4234)</li>
+                </ul>
             </div>
             <div>
-                <label for="email">email</label>
-                <input id="email" type="email" />
+                <small>주소</small>
+                <ul>
+                    <li>경기도 성남시 수정구 창업로 42 (제2판교테크노밸리) 경기기업성장센터 615호</li>
+                </ul>
+                <small>찾아오는길</small>
+                <ul>
+                    <li>신분당선 – 판교역 2번출구 >> 도보3분 >> 판교역버스정류장 55번 버스 >> 8분>> (종점)제2판교테크노밸리 경기기업성장센터</li>
+                </ul>
             </div>
-            <div>
-                <label for="message">message</label>
-                <textarea id="message" rows="3"></textarea>
-            </div>
-            <div>
-                <span></span>
-                <button>send now</button>
-            </div>
-        </form>
+        </div>
     </section>
     <canvas class="js-canvas"></canvas>
 
@@ -110,13 +125,18 @@
             y: 30,
             ease: Expo.easeInOut
         });
-        TweenMax.from(".watch", 1.6, {
-            delay: .9,
+        TweenMax.from(".information", 1.6, {
+            delay: 1,
             opacity: 0,
             y: 30,
-            rotation: 90,
             ease: Expo.easeInOut
         });
+        TweenMax.staggerFrom(".information div", 1.6, {
+            delay: 1.1,
+            opacity: 0,
+            y: -30,
+            ease: Expo.easeInOut
+        }, .2);
     </script>
 </body>
 

@@ -14,15 +14,22 @@
 .loader ul li:nth-child(6) { animation-delay: 1.6s; } 
 .loader ul li:nth-child(7) { animation-delay: 1.7s; } 
 
-.media ul { list-style: none; position: fixed; right: 24px; bottom: 0; padding: 10px}
-.media ul li { font-size: 18px; margin: 24px 0}
+.media { display:flex; background:#343a42; list-style: none; position: fixed; left:45%; bottom: 0; padding: 10px}
+.media li { color: white; font-size: 18px; margin: .7rem 1.2rem }
+.media li a {color:white}
 
+section { display:flex; align-items:center; padding:3rem; color: white; right:-50%; width: 50%; height: 90vh; bottom:0; background: #262d38;  } 
 
 
 @keyframes expandNow { 
  0% { width: 0%}
  100% { width: 64%} 
  }
+ 
+ @keyframes expandSection { 
+    0% { right: -50% } 
+    100% { right: 0% } 
+    }
 
 @keyframes go-left { 
  0% { left: 0; width: 0%}
