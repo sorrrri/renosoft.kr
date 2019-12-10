@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Questrial&display=swap"); @font-face { font-family: 'Nanum Square'; font-style: normal; font-weight: 400; src: url(../fonts/NanumSquareL.ttf); src: local('Nanum Square'),
+@import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");@font-face { font-family: 'Nanum Square'; font-style: normal; font-weight: 400; src: url(../fonts/NanumSquareL.ttf); src: local('Nanum Square'),
  local('NanumSquare'),
  url(../fonts/NanumSquareL.ttf) format('truetype'),
  url(../fonts/NanumSquareL.otf) format('opentype'); } 
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap'); html,
-body { user-select: none; background:#e8e9ea; margin: 0; padding: 0; width: 100%; height: 100vh; overflow: hidden; cursor:none } 
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');html,
+body { font-family:'Poppins'; user-select: none; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background:#e8e9ea; margin: 0; padding: 0; width: 100%; height: 100vh; overflow: hidden; cursor:none; } 
+* {-ms-cursor : auto}
 a { cursor:none; text-decoration: none; color: #262d38; } 
 p { font-family: "Nanum Square"; } 
 ul { margin: 0; padding: 0 } 
@@ -41,13 +42,15 @@ iframe { width:100%; height:100% }
 
 .logo { position: absolute; left: 0; margin: 2rem; font-family: "Questrial", sans-serif; font-weight: lighter; font-size: 1.2rem; letter-spacing: 1px; } 
 .logo a { background: url(../images/logo.png) no-repeat; width:10rem; height:2rem; background-size:contain; display: block; } 
-.content { z-index:2; position: absolute; width: 36rem; top: 46%; left: 22%; transform: translate(-50%, -50%); text-align: left } 
+.content { z-index:2; position: absolute; width: 30rem; top: 46%; left: 20%; transform: translate(-50%, -50%); text-align: left } 
 .heading { font-family: Poppins; font-weight: bolder; font-size: 60px; margin:0; display: inline-block } 
 .heading span { opacity: 0; animation: appear .0001s linear forwards; animation-delay: 7s; } 
 .heading:after { content: ''; top: 0; left: 0; width: 0%; height: 100%; background: #f5af19; position: absolute; animation: rev-text 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards; animation-delay: 6.4s } 
 
 .heading span { opacity: 0; animation: appear .0001s linear forwards; animation-delay: 1s; } 
 .heading:after { content: ''; top: 0; left: 0; width: 0%; height: 100%; background: #FFCE04; position: absolute; animation: rev-text 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards; animation-delay: .5s } 
+
+.desc { font-size:20px } 
 
 @media screen and (max-width:1500px){
  .content { width:auto; } 
