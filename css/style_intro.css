@@ -19,6 +19,8 @@
 .media li a {color:white}
 
 section { display:flex; align-items:center; padding:3rem; color: white; right:-50%; width: 50%; height: 90vh; bottom:0; background: #262d38; animation-delay: 6.9s; } 
+.desc { font-family: Poppins; font-weight:300; font-size: 18px; width:80%; word-break:keep-all } 
+.desc p { margin-top: 0px } 
 
 
 @keyframes expandNow { 

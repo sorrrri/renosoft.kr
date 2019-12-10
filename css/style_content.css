@@ -32,7 +32,7 @@ section {right:-70%; width: 70%; height: 100vh; background: #F0F0F0; animation-d
 .works .text-slide { color: #fff; font-weight: lighter; padding-left: 10%; } 
 
 .contact .location { height:100vh } 
-.contact .information { display: flex; justify-content: space-around; font-family: 'NanumSquare'; background-color: rgba(0,0,0,.9); position: absolute; bottom: 0; width: 100%; } 
+.contact .information { display: flex; justify-content: space-around; font-family: 'NanumSquare'; background-color: rgba(38,45,56,.95); position: absolute; bottom: 0; width: 100%; } 
 
 .contact .information div { padding:2rem } 
 .contact .information small { color: #737679; display:block; margin-bottom:.5rem } 
