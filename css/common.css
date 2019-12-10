@@ -2,80 +2,76 @@
  local('NanumSquare'),
  url(../fonts/NanumSquareL.ttf) format('truetype'),
  url(../fonts/NanumSquareL.otf) format('opentype'); } 
-
-html,
-body { margin: 0; padding: 0; width: 100%; height: 100vh; overflow: hidden; } 
-a { text-decoration: none; color: black } 
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap'); html,
+body { user-select: none; background:#e8e9ea; margin: 0; padding: 0; width: 100%; height: 100vh; overflow: hidden; cursor:none } 
+a { cursor:none; text-decoration: none; color: #262d38; } 
 p { font-family: "Nanum Square"; } 
 ul { margin: 0; padding: 0 } 
 li { list-style: none } 
+button { border: 0 none; background: #262d38; font-family: Poppins; letter-spacing: 2px; padding: 1rem 3rem; color: white } 
 button:focus { outline: none; } 
+section { z-index:0; position: absolute; box-sizing: border-box; animation: expandSection 1.4s cubic-bezier(0.19, 1, 0.22, 1) forwards } 
 
 iframe { width:100%; height:100% } 
 .active { visibility: visible !important; opacity: 1 !important } 
 .menu { z-index:3; position: absolute; right: 0; display: flex } 
-.menu li { padding: 2rem } 
+.menu li { padding: 2rem; } 
+.menu li a { font-weight: bold; } 
 .menu-mobile { display: none } 
 
-@media screen and (max-width:368px){
+/* grid */
+ .grid { display: block; position: absolute; top: 0; left: 0; right: 0; margin: 0 2rem; height: 100%; } 
+.grid span { float: left; direction: ltr; padding-left: 10px; padding-right: 10px; width: 14.28571%; height: 100%; padding: 0 !important; border-right: 1px solid #d3d8dd; } 
+.grid span:first-of-type { border-left: 1px solid #d3d8dd; } 
+
+@media screen and (max-width:950px) { a { cursor: auto } 
+ .menu, .grid { display: none } 
  .menu-mobile { display: block } 
- .i-menu { position: absolute; right: 0; margin: 2rem; font-size: 2rem; cursor: pointer } 
- aside { position: absolute; width: calc(36% - 4rem); height: 100%; right: calc(-36% - 4rem); background: black; color: white; padding: 2rem; z-index: 3; transition: .4s } 
+ .i-menu { position: absolute; right: 0; margin: 2rem; font-size: 2rem } 
+ aside { cursor:auto; position: absolute; width:70vw; height: 100%; right: calc(-70vw - 4rem); background: #262d38; color: white; padding: 2rem; z-index: 50; transition: .4s } 
  aside.active { right: 0 } 
- aside ul li { margin: 1rem; font-size: 3rem; font-family: Poppins; } 
+ aside ul li { margin: 1rem; font-size: 2.5rem; font-family: Poppins; } 
  aside ul li a { color: white } 
- aside .close { position: absolute; right: 2rem; font-size: 2rem; cursor: pointer } 
+ aside .close { position: absolute; right: 2rem; font-size: 2rem } 
+ .content { top: 6rem !important; width:auto; left:50% !important; transform: translateX(-50%) } 
+ .heading { font-size:40px } 
+ .desc { display: none } 
+ section { width: 100vw !important; margin-top:9rem; height:calc(100% - 9rem) !important } 
  }
 
 .logo { position: absolute; left: 0; margin: 2rem; font-family: "Questrial", sans-serif; font-weight: lighter; font-size: 1.2rem; letter-spacing: 1px; } 
-.content { z-index:2; position: absolute; width: 40rem; top: 46%; left: 28%; transform: translate(-50%, -50%); text-align: left } 
-.heading { font-family: Poppins; font-weight: bolder; font-size: 60px; display: inline-block } 
+.logo a { background: url(../images/logo.png) no-repeat; width:100px; height:1.5rem; background-size:contain; display: block; } 
+.content { z-index:2; position: absolute; width: 36rem; top: 46%; left: 25%; transform: translate(-50%, -50%); text-align: left } 
+.heading { font-family: Poppins; font-weight: bolder; font-size: 60px; margin:0; display: inline-block } 
 .heading span { opacity: 0; animation: appear .0001s linear forwards; animation-delay: 7s; } 
-.heading:after { content: ''; top: 0; left: 0; width: 0%; height: 100%; background: #272727; position: absolute; animation: rev-text 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards; animation-delay: 6.4s } 
-.desc { font-family: Poppins; font-weight: lighter; font-size: 20px } 
+.heading:after { content: ''; top: 0; left: 0; width: 0%; height: 100%; background: #f5af19; position: absolute; animation: rev-text 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards; animation-delay: 6.4s } 
+.desc { font-family: Poppins; font-weight:300; font-size: 20px } 
 .desc p { margin-top: 0px } 
-.content button { font-family: Poppins; border-radius: none; padding: 16px 40px; letter-spacing: 2px; text-transform: uppercase; background: #FFCE04; color: white; border: 0 none } 
+
+.heading span { opacity: 0; animation: appear .0001s linear forwards; animation-delay: 1s; } 
+.heading:after { content: ''; top: 0; left: 0; width: 0%; height: 100%; background: #FFCE04; position: absolute; animation: rev-text 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards; animation-delay: .4s } 
+
+@media screen and (max-width:1500px){
+ .content { width:auto; } 
+ .heading { font-size:40px } 
+ }
+
 
 /* Modal */
 .modal-backdrop { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); z-index: 31; visibility: hidden; opacity: 0; transition: 0.25s } 
 .modal { min-width:900px; opacity: 0; pointer-events: none; visibility: hidden; position: fixed; top: 50%; left: 50%; width:55%; height:60vh; transform: translate(-50%, -50%); border-radius: .5rem; transition: .25s } 
 .modal.active { opacity: 1; pointer-events: auto; visibility: visible; z-index: 50; } 
 
-.timeline { background: linear-gradient(54deg, #9164ff, #8bfff4); color: #3c3f64; overflow-x: hidden } 
-.timeline ul li { list-style-type: none; position: relative; width: 6px; margin: 0 auto; padding-top: 50px; background: #fff; } 
-.timeline ul li::after { content: ''; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%) rotate(45deg); width: 20px; height: 20px; z-index: 2; background: #eee; } 
-.timeline ul li div { position: relative; bottom: 0; width: 400px; padding: 20px; background: #fff; box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2); border-radius: 5px; display: flex; align-items: center; } 
-.timeline ul li div time { position: absolute; background: #f5af19; width: 80px; height: 30px; top: -15px; border-radius: 5px; display: flex; justify-content: center; align-items: center; letter-spacing: 2px; } 
-.timeline ul li div div { height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center; } 
-.timeline ul li div div p { text-align: center; } 
-.timeline ul li div .discovery { margin-right: 10px; } 
-.timeline ul li:nth-of-type(odd) > div { left: 45px; } 
-.timeline ul li:nth-of-type(even) > div { left: -439px; } 
-
-.timeline ul li div { visibility: hidden; opacity: 0; transition: all 0.5s ease-in-out; } 
-.timeline ul li:nth-of-type(odd) div { transform: translate3d(100px, -10px, 0) rotate(10deg); } 
-.timeline ul li:nth-of-type(even) div { transform: translate3d(-100px, -10px, 0) rotate(10deg); } 
-.timeline ul li.in-view div { transform: none; visibility: visible; opacity: 1; } 
- 
- @media screen and (max-width: 900px){
- .timeline ul li div { width: 250px; flex-direction: column; } 
-.timeline ul li div div { width: 80%; margin: 10px; } 
-.timeline ul li:nth-of-type(even) > div { left: -289px; } 
- }
- @media screen and (max-width: 600px) { body { background: #8bfff4; } 
- .timeline ul li { margin-left: 20px; } 
-.timeline ul li div { width: calc(100vw - 91px); } 
-.timeline ul li:nth-of-type(even) > div { left: 45px; } 
- }
 
  
-::-webkit-scrollbar {-webkit-appearance: none}
-::-webkit-scrollbar:vertical {width: .5rem}
-::-webkit-scrollbar:horizontal {height: .5rem}
-::-webkit-scrollbar-thumb {background-color: rgba(255, 255, 255, .6); border-radius: 10px;border: 2px solid #ffffff}
-::-webkit-scrollbar-track {border-radius: 10px; background-color: rgba(255, 255, 255, .3)}
+::-webkit-scrollbar { -webkit-appearance: none } 
+::-webkit-scrollbar:vertical { width: .5rem } 
+::-webkit-scrollbar:horizontal { height: .5rem } 
+::-webkit-scrollbar-thumb { background-color: rgba(255, 255, 255, .6); border-radius: 10px; border: 2px solid #ffffff } 
+::-webkit-scrollbar-track { border-radius: 10px; background-color: rgba(255, 255, 255, .3) } 
 
- 
+canvas { z-index:999; position: absolute; top: 0; left: 0; padding: 0; margin: 0; z-index: 3; pointer-events: none; mix-blend-mode: difference; } 
+
 @keyframes fadeOut { 
  0% { opacity: 0 } 
  40% { opacity: 0 } 
@@ -95,3 +91,4 @@ iframe { width:100%; height:100% }
  0% { opacity: 0; } 
  100% { opacity: 1 } 
  }
+ 
