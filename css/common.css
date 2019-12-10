@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css?family=Questrial&display=swap"); @font-face { font-family: 'Nanum Square'; font-style: normal; font-weight: 400; src: url(../fonts/NanumSquareL.ttf); src: local('Nanum Square'),
  local('NanumSquare'),
  url(../fonts/NanumSquareL.ttf) format('truetype'),
@@ -9,9 +8,9 @@ a { cursor:none; text-decoration: none; color: #262d38; }
 p { font-family: "Nanum Square"; } 
 ul { margin: 0; padding: 0 } 
 li { list-style: none } 
-button { border: 0 none; background: #262d38; font-family: Poppins; letter-spacing: 2px; padding: 1rem 3rem; color: white } 
+button { cursor:none; border: 0 none; background: #262d38; font-family: Poppins; letter-spacing: 2px; padding: 1rem 3rem; color: white } 
 button:focus { outline: none; } 
-section { z-index:0; position: absolute; box-sizing: border-box; animation: expandSection 1.4s cubic-bezier(0.19, 1, 0.22, 1) forwards } 
+section { z-index:0; position: absolute; box-sizing: border-box; animation: expandSection 1s cubic-bezier(0.19, 1, 0.22, 1) forwards } 
 
 iframe { width:100%; height:100% } 
 .active { visibility: visible !important; opacity: 1 !important } 
@@ -50,7 +49,7 @@ iframe { width:100%; height:100% }
 .desc p { margin-top: 0px } 
 
 .heading span { opacity: 0; animation: appear .0001s linear forwards; animation-delay: 1s; } 
-.heading:after { content: ''; top: 0; left: 0; width: 0%; height: 100%; background: #FFCE04; position: absolute; animation: rev-text 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards; animation-delay: .4s } 
+.heading:after { content: ''; top: 0; left: 0; width: 0%; height: 100%; background: #FFCE04; position: absolute; animation: rev-text 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards; animation-delay: .5s } 
 
 @media screen and (max-width:1500px){
  .content { width:auto; } 
@@ -92,99 +91,4 @@ canvas { z-index:999; position: absolute; top: 0; left: 0; padding: 0; margin: 0
  0% { opacity: 0; } 
  100% { opacity: 1 } 
  }
-=======
-@import url("https://fonts.googleapis.com/css?family=Questrial&display=swap"); @font-face { font-family: 'Nanum Square'; font-style: normal; font-weight: 400; src: url(../fonts/NanumSquareL.ttf); src: local('Nanum Square'),
- local('NanumSquare'),
- url(../fonts/NanumSquareL.ttf) format('truetype'),
- url(../fonts/NanumSquareL.otf) format('opentype'); } 
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap'); html,
-body { user-select: none; background:#e8e9ea; margin: 0; padding: 0; width: 100%; height: 100vh; overflow: hidden; cursor:none } 
-a { cursor:none; text-decoration: none; color: #262d38; } 
-p { font-family: "Nanum Square"; } 
-ul { margin: 0; padding: 0 } 
-li { list-style: none } 
-button { border: 0 none; background: #262d38; font-family: Poppins; letter-spacing: 2px; padding: 1rem 3rem; color: white } 
-button:focus { outline: none; } 
-section { z-index:0; position: absolute; box-sizing: border-box; animation: expandSection 1.4s cubic-bezier(0.19, 1, 0.22, 1) forwards } 
-
-iframe { width:100%; height:100% } 
-.active { visibility: visible !important; opacity: 1 !important } 
-.menu { z-index:3; position: absolute; right: 0; display: flex } 
-.menu li { padding: 2rem; } 
-.menu li a { font-weight: bold; } 
-.menu-mobile { display: none } 
-
-/* grid */
- .grid { display: block; position: absolute; top: 0; left: 0; right: 0; margin: 0 2rem; height: 100%; } 
-.grid span { float: left; direction: ltr; padding-left: 10px; padding-right: 10px; width: 14.28571%; height: 100%; padding: 0 !important; border-right: 1px solid #d3d8dd; } 
-.grid span:first-of-type { border-left: 1px solid #d3d8dd; } 
-
-@media screen and (max-width:950px) { a { cursor: auto } 
- .menu, .grid { display: none } 
- .menu-mobile { display: block } 
- .i-menu { position: absolute; right: 0; margin: 2rem; font-size: 2rem } 
- aside { cursor:auto; position: absolute; width:70vw; height: 100%; right: calc(-70vw - 4rem); background: #262d38; color: white; padding: 2rem; z-index: 50; transition: .4s } 
- aside.active { right: 0 } 
- aside ul li { margin: 1rem; font-size: 2.5rem; font-family: Poppins; } 
- aside ul li a { color: white } 
- aside .close { position: absolute; right: 2rem; font-size: 2rem } 
- .content { top: 6rem !important; width:auto; left:50% !important; transform: translateX(-50%) } 
- .heading { font-size:40px } 
- .desc { display: none } 
- section { width: 100vw !important; margin-top:9rem; height:calc(100% - 9rem) !important } 
- }
-
-.logo { position: absolute; left: 0; margin: 2rem; font-family: "Questrial", sans-serif; font-weight: lighter; font-size: 1.2rem; letter-spacing: 1px; } 
-.logo a { background: url(../images/logo.png) no-repeat; width:100px; height:1.5rem; background-size:contain; display: block; } 
-.content { z-index:2; position: absolute; width: 36rem; top: 46%; left: 25%; transform: translate(-50%, -50%); text-align: left } 
-.heading { font-family: Poppins; font-weight: bolder; font-size: 60px; margin:0; display: inline-block } 
-.heading span { opacity: 0; animation: appear .0001s linear forwards; animation-delay: 7s; } 
-.heading:after { content: ''; top: 0; left: 0; width: 0%; height: 100%; background: #f5af19; position: absolute; animation: rev-text 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards; animation-delay: 6.4s } 
-.desc { font-family: Poppins; font-weight:300; font-size: 20px } 
-.desc p { margin-top: 0px } 
-
-.heading span { opacity: 0; animation: appear .0001s linear forwards; animation-delay: 1s; } 
-.heading:after { content: ''; top: 0; left: 0; width: 0%; height: 100%; background: #FFCE04; position: absolute; animation: rev-text 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards; animation-delay: .4s } 
-
-@media screen and (max-width:1500px){
- .content { width:auto; } 
- .heading { font-size:40px } 
- }
-
-
-/* Modal */
-.modal-backdrop { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); z-index: 31; visibility: hidden; opacity: 0; transition: 0.25s } 
-.modal { min-width:900px; opacity: 0; pointer-events: none; visibility: hidden; position: fixed; top: 50%; left: 50%; width:55%; height:60vh; transform: translate(-50%, -50%); border-radius: .5rem; transition: .25s } 
-.modal.active { opacity: 1; pointer-events: auto; visibility: visible; z-index: 50; } 
-
-
- 
-::-webkit-scrollbar { -webkit-appearance: none } 
-::-webkit-scrollbar:vertical { width: .5rem } 
-::-webkit-scrollbar:horizontal { height: .5rem } 
-::-webkit-scrollbar-thumb { background-color: rgba(255, 255, 255, .6); border-radius: 10px; border: 2px solid #ffffff } 
-::-webkit-scrollbar-track { border-radius: 10px; background-color: rgba(255, 255, 255, .3) } 
-
-canvas { z-index:999; position: absolute; top: 0; left: 0; padding: 0; margin: 0; z-index: 3; pointer-events: none; mix-blend-mode: difference; } 
-
-@keyframes fadeOut { 
- 0% { opacity: 0 } 
- 40% { opacity: 0 } 
- 41% { opacity: 1 } 
- 91% { opacity: 1 } 
- 92% { opacity: 0 } 
- 100% { opacity: 0 } 
- }
- 
- @keyframes rev-text { 
- 0% { left: 0; width: 0% } 
- 50% { left: 0; width: 100% } 
- 100% { left: 100%; width: 0% } 
- }
- 
- @keyframes appear { 
- 0% { opacity: 0; } 
- 100% { opacity: 1 } 
- }
->>>>>>> 11ed07a4e4f62aec00b3e4891d30f696f0a5409f
  
