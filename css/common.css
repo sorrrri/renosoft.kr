@@ -58,7 +58,8 @@ canvas { z-index:999; position: absolute; top: 0; left: 0; padding: 0; margin: 0
 
 
 @media screen and (max-width:990px) {
-    body {overflow-y:auto; overflow-x:hidden; display:flex; justify-content:center; height: auto; cursor:auto}
+    html, body {overflow-y:auto; overflow-x:hidden;}
+    body {display:flex; justify-content:center; height: auto; cursor:auto}
     .third-block { display:none }
     .cursor, canvas {display: none}
     .heading { font-size:2rem !important; text-align: center }

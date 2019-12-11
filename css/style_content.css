@@ -30,6 +30,7 @@ section { right:-70%; width: 70%; height: 100vh; background: #F0F0F0; animation-
 .works .text-slider-wrapper { z-index: 2; position: absolute; width: 100%; top: 60%; } 
 .works .text-slider { margin: 0%; padding: 0%; height: 100vh; } 
 .works .text-slide { color: #fff; font-weight: lighter; padding-left: 10%; } 
+.works .modal-timeline { max-width: 760px; } 
 
 .contact .location { height:100vh } 
 .contact .information { display: flex; justify-content: space-around; font-family: 'Nanum Square'; background-color: rgba(38,45,56,.95); position: absolute; bottom: 0; width: 100%; } 
@@ -51,8 +52,9 @@ section { right:-70%; width: 70%; height: 100vh; background: #F0F0F0; animation-
  .works .slide-slick { display: none !important; } 
  .works .text-slide h1 { font-size: 30px !important; } 
  .works .text-slider-wrapper { position: absolute; top: 50% !important; } 
- .works .modal-timeline { height: 80vh; width: 90vw; min-width: auto; }
- .works .timeline-item {height:30vh; width:40%} 
+ .works .modal-timeline { height: 80vh; width: 90vw; min-width: auto; } 
+ 
+ .works .timeline-item { height:30vh; width:40% } 
  
  .contact .desc { display:none } 
  .contact .location { height:40vh } 
