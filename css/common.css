@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-@import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");
-@font-face { font-family: 'Nanum Square'; font-style: normal; font-weight: 400; src: url(../fonts/NanumSquareL.ttf); src: local('Nanum Square'),
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');@import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");@font-face { font-family: 'Nanum Square'; font-style: normal; font-weight: 400; src: url(../fonts/NanumSquareL.ttf); src: local('Nanum Square'),
  local('NanumSquare'),
  url(../fonts/NanumSquareL.ttf) format('truetype'),
  url(../fonts/NanumSquareL.otf) format('opentype'); } 
@@ -18,8 +16,11 @@ section { z-index:0; position: absolute; box-sizing: border-box; animation: expa
 
 iframe { width:100%; height:100% } 
 .active { visibility: visible !important; opacity: 1 !important } 
+
+/* header */
+header { padding: 2rem; position: absolute; top: 0; width: 100%; box-sizing: border-box; display: flex; justify-content: space-between; } 
 .menu { z-index:3; position: absolute; right: 0; display: flex } 
-.menu li { padding: 2rem; } 
+.menu li { padding: 0 2rem; } 
 .menu li a { font-weight: bold; } 
 .menu-mobile { display: none } 
 
@@ -29,7 +30,6 @@ iframe { width:100%; height:100% }
 .grid span:first-of-type { border-left: 1px solid #d3d8dd; } 
 
 
-.logo { position: absolute; left: 0; margin: 1rem;} 
 .logo a { background: url(../images/logo.png) no-repeat; width:10rem; height:2rem; background-size:contain; display: block; } 
 .content { z-index:2; position: absolute; width: 30rem; top: 46%; left: 6%; text-align: left } 
 .heading { font-weight: bolder; font-size: 60px; margin:0; display: inline-block } 
@@ -57,26 +57,25 @@ canvas { z-index:999; position: absolute; top: 0; left: 0; padding: 0; margin: 0
 
 
 
-@media screen and (max-width:990px) {
-    html, body {overflow-y:auto; overflow-x:hidden;}
-    body {display:flex; justify-content:center; height: auto; cursor:auto}
-    .third-block { display:none }
-    .cursor, canvas {display: none}
-    .heading { font-size:2rem !important; text-align: center }
-    .content { width:auto; } 
-    a { cursor: auto } 
-    .menu, .grid { display: none } 
-    .menu-mobile { display: block } 
-    .i-menu { position: absolute; right: 0; margin: 1rem; font-size: 2rem } 
-    aside { display:none; cursor:auto; position: absolute; width:70vw; height: 100%; right: calc(-70vw - 4rem); background: #262d38; color: white; padding: 2rem; z-index: 50; transition: .4s } 
-    aside.active { display:block; right: 0 } 
-    aside ul li { margin: 1rem; font-size: 2.5rem; font-family: Poppins; } 
-    aside ul li a { color: white } 
-    aside .close { position: absolute; right: 2rem; font-size: 2rem } 
-    .content { letter-spacing: -.1rem; top: 5rem !important; width:auto; left:50% !important; transform: translateX(-50%) } 
-    .desc { width:100% !important; text-align:center; margin:0 auto } 
-    section { right:-100vw !important; width: 100vw !important; margin-top:9rem; height:calc(100% - 9rem) !important } 
-}
+@media screen and (max-width:990px) { html, body { overflow-y:auto; overflow-x:hidden; } 
+ body { display:flex; justify-content:center; height: auto; cursor:auto } 
+ .third-block { display:none } 
+ .cursor, canvas { display: none } 
+ .heading { font-size:2rem !important; text-align: center } 
+ .content { width:auto; } 
+ a { cursor: auto } 
+ .menu, .grid { display: none } 
+ .menu-mobile { display: block } 
+ .i-menu { position: absolute; right: 0; margin: 1rem; font-size: 2rem } 
+ aside { display:none; cursor:auto; position: absolute; width:70vw; height: 100%; right: calc(-70vw - 4rem); background: #262d38; color: white; padding: 2rem; z-index: 50; transition: .4s } 
+ aside.active { display:block; right: 0 } 
+ aside ul li { margin: 1rem; font-size: 2.5rem; font-family: Poppins; } 
+ aside ul li a { color: white } 
+ aside .close { position: absolute; right: 2rem; font-size: 2rem } 
+ .content { letter-spacing: -.1rem; top: 5rem !important; width:auto; left:50% !important; transform: translateX(-50%) } 
+ .desc { width:100% !important; text-align:center; margin:0 auto } 
+ section { right:-100vw !important; width: 100vw !important; margin-top:9rem; height:calc(100% - 9rem) !important } 
+ }
 
 
 
