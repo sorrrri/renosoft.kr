@@ -1,4 +1,4 @@
-section {right:-70%; width: 70%; height: 100vh; background: #F0F0F0; animation-delay: 2s;} 
+section { right:-70%; width: 70%; height: 100vh; background: #F0F0F0; animation-delay: 2s; } 
 
 @media screen and (max-width:1500px){
  .content { left:15% } 
@@ -11,8 +11,8 @@ section {right:-70%; width: 70%; height: 100vh; background: #F0F0F0; animation-d
  }
 
  @keyframes expandSection { 
-    0% { opacity:.3; right: -5% } 
-    100% { opacity:1; right: 0% } 
+ 0% { opacity:.3; right: -5% } 
+ 100% { opacity:1; right: 0% } 
  }
 
 .works .image-slider { z-index: 0; margin: 0 auto; padding: 0; width: 100%; height: 100vh; } 
@@ -32,7 +32,7 @@ section {right:-70%; width: 70%; height: 100vh; background: #F0F0F0; animation-d
 .works .text-slide { color: #fff; font-weight: lighter; padding-left: 10%; } 
 
 .contact .location { height:100vh } 
-.contact .information { display: flex; justify-content: space-around; font-family: 'NanumSquare'; background-color: rgba(38,45,56,.95); position: absolute; bottom: 0; width: 100%; } 
+.contact .information { display: flex; justify-content: space-around; font-family: 'Nanum Square'; background-color: rgba(38,45,56,.95); position: absolute; bottom: 0; width: 100%; } 
 
 .contact .information div { padding:2rem } 
 .contact .information small { color: #737679; display:block; margin-bottom:.5rem } 
@@ -40,14 +40,23 @@ section {right:-70%; width: 70%; height: 100vh; background: #F0F0F0; animation-d
 .contact .information ul li { line-height: 1.5; word-break: keep-all; color: white } 
 .contact .information a { color: white } 
 
+
 @media(max-width: 990px){
- .works .block-2, .overlay { display: none; } 
- .works .block-1 { width: 50%; } 
- .works .block-3 { width: 12%; } 
+ .works { overflow-y:hidden } 
+ .works .text-slide { color: black } 
+ .works .slider-control { display:none } 
+ .works .slick-slide.slick-center { transform: scale(1); } 
+ .works .blocks, .overlay { display: none; } 
 
  .works .slide-slick { display: none !important; } 
  .works .text-slide h1 { font-size: 30px !important; } 
  .works .text-slider-wrapper { position: absolute; top: 50% !important; } 
- .works .slider-control { left: 22.5%; } 
+ .works .modal-timeline { height: 80vh; width: 90vw; min-width: auto; }
+ .works .timeline-item {height:30vh; width:40%} 
+ 
+ .contact .desc { display:none } 
+ .contact .location { height:40vh } 
+ .contact .information { flex-direction: column; position: relative } 
+ .contact .information div:first-of-type { padding-bottom:0 } 
  }
 

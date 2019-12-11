@@ -1,10 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");@font-face { font-family: 'Nanum Square'; font-style: normal; font-weight: 400; src: url(../fonts/NanumSquareL.ttf); src: local('Nanum Square'),
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");
+@font-face { font-family: 'Nanum Square'; font-style: normal; font-weight: 400; src: url(../fonts/NanumSquareL.ttf); src: local('Nanum Square'),
  local('NanumSquare'),
  url(../fonts/NanumSquareL.ttf) format('truetype'),
  url(../fonts/NanumSquareL.otf) format('opentype'); } 
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');html,
-body { font-family:'Poppins'; user-select: none; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background:#e8e9ea; margin: 0; padding: 0; width: 100%; height: 100vh; overflow: hidden; cursor:none; } 
-* {-ms-cursor : auto}
+body { font-family:'Poppins'; user-select: none; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background:#e8e9ea; margin: 0; padding: 0; width: 100vw; height: 100vh; overflow: hidden; cursor:none; } 
+
+
+
 a { cursor:none; text-decoration: none; color: #262d38; } 
 p { font-family: "Nanum Square"; } 
 ul { margin: 0; padding: 0 } 
@@ -25,37 +28,16 @@ iframe { width:100%; height:100% }
 .grid span { float: left; direction: ltr; padding-left: 10px; padding-right: 10px; width: 14.28571%; height: 100%; padding: 0 !important; border-right: 1px solid #d3d8dd; } 
 .grid span:first-of-type { border-left: 1px solid #d3d8dd; } 
 
-@media screen and (max-width:950px) { a { cursor: auto } 
- .menu, .grid { display: none } 
- .menu-mobile { display: block } 
- .i-menu { position: absolute; right: 0; margin: 2rem; font-size: 2rem } 
- aside { cursor:auto; position: absolute; width:70vw; height: 100%; right: calc(-70vw - 4rem); background: #262d38; color: white; padding: 2rem; z-index: 50; transition: .4s } 
- aside.active { right: 0 } 
- aside ul li { margin: 1rem; font-size: 2.5rem; font-family: Poppins; } 
- aside ul li a { color: white } 
- aside .close { position: absolute; right: 2rem; font-size: 2rem } 
- .content { top: 6rem !important; width:auto; left:50% !important; transform: translateX(-50%) } 
- .heading { font-size:40px } 
- .desc { display: none } 
- section { width: 100vw !important; margin-top:9rem; height:calc(100% - 9rem) !important } 
- }
 
-.logo { position: absolute; left: 0; margin: 2rem; font-family: "Questrial", sans-serif; font-weight: lighter; font-size: 1.2rem; letter-spacing: 1px; } 
+.logo { position: absolute; left: 0; margin: 1rem;} 
 .logo a { background: url(../images/logo.png) no-repeat; width:10rem; height:2rem; background-size:contain; display: block; } 
-.content { z-index:2; position: absolute; width: 30rem; top: 46%; left: 20%; transform: translate(-50%, -50%); text-align: left } 
-.heading { font-family: Poppins; font-weight: bolder; font-size: 60px; margin:0; display: inline-block } 
-.heading span { opacity: 0; animation: appear .0001s linear forwards; animation-delay: 7s; } 
-.heading:after { content: ''; top: 0; left: 0; width: 0%; height: 100%; background: #f5af19; position: absolute; animation: rev-text 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards; animation-delay: 6.4s } 
+.content { z-index:2; position: absolute; width: 30rem; top: 46%; left: 6%; text-align: left } 
+.heading { font-weight: bolder; font-size: 60px; margin:0; display: inline-block } 
+.heading span { display:block; opacity: 0; animation: appear .0001s linear forwards } 
+.heading:after { content: ''; top: 0; left: 0; width: 0%; height: 100%; background: #f5af19; position: absolute; animation: rev-text 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards } 
 
-.heading span { opacity: 0; animation: appear .0001s linear forwards; animation-delay: 1s; } 
-.heading:after { content: ''; top: 0; left: 0; width: 0%; height: 100%; background: #FFCE04; position: absolute; animation: rev-text 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards; animation-delay: .5s } 
 
 .desc { font-size:20px } 
-
-@media screen and (max-width:1500px){
- .content { width:auto; } 
- .heading { font-size:40px } 
- }
 
 
 /* Modal */
@@ -72,6 +54,31 @@ iframe { width:100%; height:100% }
 ::-webkit-scrollbar-track { border-radius: 10px; background-color: rgba(255, 255, 255, .3) } 
 
 canvas { z-index:999; position: absolute; top: 0; left: 0; padding: 0; margin: 0; z-index: 3; pointer-events: none; mix-blend-mode: difference; } 
+
+
+
+@media screen and (max-width:990px) {
+    body {overflow-y:auto; overflow-x:hidden; display:flex; justify-content:center; height: auto; cursor:auto}
+    .third-block { display:none }
+    .cursor, canvas {display: none}
+    .heading { font-size:2rem !important; text-align: center }
+    .content { width:auto; } 
+    a { cursor: auto } 
+    .menu, .grid { display: none } 
+    .menu-mobile { display: block } 
+    .i-menu { position: absolute; right: 0; margin: 1rem; font-size: 2rem } 
+    aside { display:none; cursor:auto; position: absolute; width:70vw; height: 100%; right: calc(-70vw - 4rem); background: #262d38; color: white; padding: 2rem; z-index: 50; transition: .4s } 
+    aside.active { display:block; right: 0 } 
+    aside ul li { margin: 1rem; font-size: 2.5rem; font-family: Poppins; } 
+    aside ul li a { color: white } 
+    aside .close { position: absolute; right: 2rem; font-size: 2rem } 
+    .content { letter-spacing: -.1rem; top: 5rem !important; width:auto; left:50% !important; transform: translateX(-50%) } 
+    .desc { width:100% !important; text-align:center; margin:0 auto } 
+    section { right:-100vw !important; width: 100vw !important; margin-top:9rem; height:calc(100% - 9rem) !important } 
+}
+
+
+
 
 @keyframes fadeOut { 
  0% { opacity: 0 } 

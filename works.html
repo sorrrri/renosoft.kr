@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>renosoft - our works</title>
+    <link rel="shortcut icon" href="images/renosoft.ico">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style_content.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
@@ -157,6 +158,24 @@
             asNavFor: '.image-slider',
             prevArrow: $('.prev'),
             nextArrow: $('.next')
+        }
+
+        var ua = window.navigator.userAgent;
+        var windowWidth = $(window).width();
+
+        if (windowWidth < 991 || /lgtelecom/i.test(ua) || /Android/i.test(ua) || /blackberry/i.test(ua) || /iPhone/i
+            .test(ua) || /ipad/i
+            .test(ua) || /samsung/i.test(ua) || /symbian/i.test(ua) || /sony/i.test(ua) || /SCH-/i.test(ua) || /SPH-/i
+            .test(ua)) {
+            var sickPrimary = {
+                autoplay: true,
+                autoplaySpeed: 2400,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                speed: 1800,
+                cssEase: 'cubic-bezier(.84, 0, .08, .99)',
+                asNavFor: '.text-slider'
+            }
         }
 
         $('.image-slider').slick(sickPrimary);

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>renosoft - main</title>
+    <link rel="shortcut icon" href="images/renosoft.ico">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style_intro.css">
 </head>
@@ -109,6 +110,12 @@
             y: -20,
             ease: Expo.easeInOut
         }, .2);
+        TweenMax.from(".i-menu", 2, {
+            delay: 6.5,
+            opacity: 0,
+            y: -20,
+            ease: Expo.easeInOut
+        });
         TweenMax.from(".heading", 1.6, {
             delay: 6.6,
             opacity: 0,
@@ -127,7 +134,7 @@
             y: 30,
             ease: Expo.easeInOut
         });
-        TweenMax.staggerFrom(".media", 2, {
+        TweenMax.from(".media", 2, {
             delay: 7,
             opacity: 0,
             y: 40,
