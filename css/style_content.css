@@ -1,9 +1,3 @@
-section { right:-70%; width: 70%; height: 100vh; background: #F0F0F0; animation-delay: 2s; } 
-
-@media screen and (max-width:1500px){
- .content { left:15% } 
- }
-
 @keyframes go-left { 
  0% { left: 0; width: 0% } 
  50% { left: 0; width: 100% } 
@@ -32,14 +26,15 @@ section { right:-70%; width: 70%; height: 100vh; background: #F0F0F0; animation-
 .works .text-slide { color: #fff; font-weight: lighter; padding-left: 10%; } 
 .works .modal-timeline { max-width: 760px; } 
 
-.contact .location { height:100vh } 
-.contact .information { display: flex; justify-content: space-around; font-family: 'Nanum Square'; background-color: rgba(38,45,56,.95); position: absolute; bottom: 0; width: 100%; } 
+.contact .information { margin-left: 14rem; margin-bottom:5rem; font-weight: bold; display: flex; justify-content: space-between; font-family: 'Nanum Square' } 
 
-.contact .information div { padding:2rem } 
+
 .contact .information small { color: #737679; display:block; margin-bottom:.5rem } 
 .contact .information ul { margin-bottom: 1rem } 
-.contact .information ul li { line-height: 1.5; word-break: keep-all; color: white } 
-.contact .information a { color: white } 
+.contact .information ul li { line-height: 1.5; word-break: keep-all; color: black } 
+.contact .information a { color: black } 
+
+.contact .location { min-height: 500px; height: 600px; width: 80%; margin: 0 auto; } 
 
 
 @media(max-width: 990px){
