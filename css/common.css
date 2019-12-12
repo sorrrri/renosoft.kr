@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');@import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");@font-face { font-family: 'Nanum Square'; font-style: normal; font-weight: 400; src: url(../fonts/NanumSquareL.ttf); src: local('Nanum Square'),
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap'); @import url("https://fonts.googleapis.com/css?family=Questrial&display=swap"); @font-face { font-family: 'Nanum Square'; font-style: normal; font-weight: 400; src: url(../fonts/NanumSquareL.ttf); src: local('Nanum Square'),
  local('NanumSquare'),
  url(../fonts/NanumSquareL.ttf) format('truetype'),
  url(../fonts/NanumSquareL.otf) format('opentype'); } 
@@ -18,11 +18,11 @@ iframe { width:100%; height:100% }
 .active { visibility: visible !important; opacity: 1 !important } 
 
 /* header */
-header { padding: 2rem; position: absolute; top: 0; width: 100%; box-sizing: border-box; display: flex; justify-content: space-between; } 
-.menu { z-index:3; position: absolute; right: 0; display: flex } 
-.menu li { padding: 0 2rem; } 
+header { z-index: 10; padding: 2rem; position: relative; width: 100%; box-sizing: border-box; display: flex; justify-content: space-between; } 
+nav, .menu { display:flex } 
+.menu li { padding-left: 3rem; } 
 .menu li a { font-weight: bold; } 
-.menu-mobile { display: none } 
+.menu-mobile, .i-menu { display: none } 
 
 /* grid */
  .grid { display: block; position: absolute; top: 0; left: 0; right: 0; margin: 0 2rem; height: 100%; } 
@@ -65,9 +65,8 @@ canvas { z-index:999; position: absolute; top: 0; left: 0; padding: 0; margin: 0
  .content { width:auto; } 
  a { cursor: auto } 
  .menu, .grid { display: none } 
- .menu-mobile { display: block } 
- .i-menu { position: absolute; right: 0; margin: 1rem; font-size: 2rem } 
- aside { display:none; cursor:auto; position: absolute; width:70vw; height: 100%; right: calc(-70vw - 4rem); background: #262d38; color: white; padding: 2rem; z-index: 50; transition: .4s } 
+ .i-menu { display:block; font-size: 2rem } 
+ aside { cursor:auto; position: absolute; width:70vw; height: 100vh; right: calc(-70vw - 4rem); background: #262d38; color: white; padding: 2rem; z-index: 50; transition: .4s } 
  aside.active { display:block; right: 0 } 
  aside ul li { margin: 1rem; font-size: 2.5rem; font-family: Poppins; } 
  aside ul li a { color: white } 

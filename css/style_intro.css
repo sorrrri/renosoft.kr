@@ -50,7 +50,7 @@ var(--gird-width) 100%; }
 .media { display:flex; background:#343a42; list-style: none; position: fixed; left:45%; bottom: 0; padding: 10px } 
 .media li { color: white; font-size: 18px; margin: .7rem 1.2rem } 
 .media li a { color:white } 
-@media screen and (max-width:481px) {
+@media screen and (max-width:990px) {
     a { cursor: auto } 
     .loader ul li {font-size:18px; margin:0 3px}
     .media { left:auto; right:0 } 
