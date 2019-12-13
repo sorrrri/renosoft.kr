@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
 </head>
 
-<body class="contact">
+<body>
     <div class="grid">
         <span></span>
         <span></span>
@@ -49,11 +49,17 @@
         </ul>
     </aside>
 
-    <section>
+    <section class="contact">
 
         <h1 class="heading">
             <span>Contact Us</span>
         </h1>
+
+        <div class="content">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12676.335222433147!2d127.08755195286481!3d37.41149399999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ae8e2b007da24ad!2z6rK96riw6riw7JeF7ISx7J6l7IS87YSw!5e0!3m2!1sko!2skr!4v1575945519541!5m2!1sko!2skr"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
         
         <div class="information">
             <div>
@@ -72,23 +78,12 @@
                 </ul>
                 <small>찾아오는길</small>
                 <ul>
-                    <li>신분당선 – 판교역 2번출구 >> 도보3분 >> 판교역버스정류장 55번 버스 >> 8분>> (종점)제2판교테크노밸리 경기기업성장센터</li>
+                    <li>신분당선 – 판교역 2번출구 >> 도보3분 >> 판교역버스정류장 55번 버스 >> <br>8분>> (종점)제2판교테크노밸리 경기기업성장센터</li>
                 </ul>
             </div>
         </div>
-
-        <div class="location">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12676.335222433147!2d127.08755195286481!3d37.41149399999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ae8e2b007da24ad!2z6rK96riw6riw7JeF7ISx7J6l7IS87YSw!5e0!3m2!1sko!2skr!4v1575945519541!5m2!1sko!2skr"
-                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </div>
     </section>
     <canvas class="js-canvas"></canvas>
-
-    <!-- Modal -->
-    <div class="modal modal-timeline">
-        <iframe src="timeline.html" frameborder="0"></iframe>
-    </div><!-- end Modal -->
     <div class="modal-backdrop"></div>
 
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
@@ -110,21 +105,14 @@
             ease: Expo.easeInOut
         }, .2);
         TweenMax.from(".heading", 1.6, {
-            delay: .3,
             opacity: 0,
-            y: 0,
+            y:-20,
             ease: Expo.easeInOut
         });
-        TweenMax.from(".desc", 1.6, {
-            delay: .7,
+        TweenMax.from(".information", 1.6, {
+            delay: .4,
             opacity: 0,
-            y: 30,
-            ease: Expo.easeInOut
-        });
-        TweenMax.from("button", 1.6, {
-            delay: .8,
-            opacity: 0,
-            y: 30,
+            y: -20,
             ease: Expo.easeInOut
         });
         TweenMax.staggerFrom(".information div", 1.6, {

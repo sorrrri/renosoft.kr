@@ -9,11 +9,12 @@
     <link rel="shortcut icon" href="images/renosoft.ico">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style_content.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
 </head>
 
-<body class="works">
+<body>
     <div class="grid">
         <span></span>
         <span></span>
@@ -48,46 +49,85 @@
         </ul>
     </aside>
 
-    <h1 class="heading">
-        <span>Our Works</span>
-    </h1>
-    
-    <section>
-        <div class="text-slider-wrapper">
-            <div class="text-slider">
-                <h2 class="text-slide">웰스토리 모바일오피스<br>어플리케이션 구축</h2>
-                <h2 class="text-slide">르노삼성 챗봇 개발</h2>
-                <h2 class="text-slide">세번째 프로젝트</h2>
-                <h2 class="text-slide">네번째 프로젝트</h2>
+    <section class="works">
+
+        <h1 class="heading">
+            <span>Our Works</span>
+        </h1>
+
+        <div class="content">
+            <div class="text-slider-wrapper">
+                <div class="text-slider">
+                    <h2 class="text-slide">웰스토리 모바일오피스<br>어플리케이션 구축</h2>
+                    <h2 class="text-slide">르노삼성 챗봇 개발</h2>
+                    <h2 class="text-slide">세번째 프로젝트</h2>
+                    <h2 class="text-slide">네번째 프로젝트</h2>
+                </div>
+            </div>
+
+            <div class="slider-control">
+                <div class="prev"><button type="button">
+                        <ion-icon name="arrow-back"></ion-icon>
+                    </button></div>
+                <div class="next"><button type="button">
+                        <ion-icon name="arrow-forward"></ion-icon>
+                    </button></div>
+            </div>
+
+            <div class="blocks">
+                <div class="block-1"></div>
+                <div class="block-2"></div>
+                <div class="block-3"></div>
+            </div>
+
+            <div class="overlay"></div>
+
+            <div class="image-slider" onclick="modal('timeline')">
+                <div class="image-slide" id="one"
+                    style="background: url(./images/works/welstory.jpg) no-repeat 50% 50%; background-size: cover;">
+                </div>
+                <div class="image-slide" id="two"
+                    style="background: url(./images/works/rsm.jpg) no-repeat 50% 50%; background-size: cover;"></div>
+                <div class="image-slide" id="three"
+                    style="background: url(./images/works/welstory.jpg) no-repeat 50% 50%; background-size: cover;">
+                </div>
+                <div class="image-slide" id="four"
+                    style="background: url(./images/works/rsm.jpg) no-repeat 50% 50%; background-size: cover;"></div>
             </div>
         </div>
+    </section>
 
-        <div class="slider-control">
-            <div class="prev"><button type="button">
-                    <ion-icon name="arrow-back"></ion-icon>
-                </button></div>
-            <div class="next"><button type="button">
-                    <ion-icon name="arrow-forward"></ion-icon>
-                </button></div>
+    <section class="contact">
+        <h1 class="heading wow slideInLeft" data-wow-duration="2s">
+            <span>Contact Us</span>
+        </h1>
+
+        <div class="content">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12676.335222433147!2d127.08755195286481!3d37.41149399999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ae8e2b007da24ad!2z6rK96riw6riw7JeF7ISx7J6l7IS87YSw!5e0!3m2!1sko!2skr!4v1575945519541!5m2!1sko!2skr"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
 
-        <div class="blocks">
-            <div class="block-1"></div>
-            <div class="block-2"></div>
-            <div class="block-3"></div>
-        </div>
-
-        <div class="overlay"></div>
-
-        <div class="image-slider" onclick="modal('timeline')">
-            <div class="image-slide" id="one"
-                style="background: url(./images/works/welstory.jpg) no-repeat 50% 50%; background-size: cover;"></div>
-            <div class="image-slide" id="two"
-                style="background: url(./images/works/rsm.jpg) no-repeat 50% 50%; background-size: cover;"></div>
-            <div class="image-slide" id="three"
-                style="background: url(./images/works/welstory.jpg) no-repeat 50% 50%; background-size: cover;"></div>
-            <div class="image-slide" id="four"
-                style="background: url(./images/works/rsm.jpg) no-repeat 50% 50%; background-size: cover;"></div>
+        <div class="information wow slideInRight" data-wow-duration="2s">
+            <div>
+                <small>채용, 대외홍보, 사업 문의</small>
+                <ul>
+                    <li><a href="mailto:renosoft@renosoft.kr">renosoft@renosoft.kr</a></li>
+                    <li>전화 : 031-751-4234 </li>
+                    <li>팩스 : 031-751-4235</li>
+                    <li>담당자 : 안덕곤 (010-2677-4234)</li>
+                </ul>
+            </div>
+            <div>
+                <small>주소</small>
+                <ul>
+                    <li>경기도 성남시 수정구 창업로 42 (제2판교테크노밸리) 경기기업성장센터 615호</li>
+                </ul>
+                <small>찾아오는길</small>
+                <ul>
+                    <li>신분당선 – 판교역 2번출구 >> 도보3분 >> 판교역버스정류장 55번 버스 >> <br>8분>> (종점)제2판교테크노밸리 경기기업성장센터</li>
+                </ul>
+            </div>
         </div>
     </section>
     <canvas class="js-canvas"></canvas>
@@ -99,11 +139,25 @@
     <div class="modal-backdrop"></div>
 
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/TweenMax.min.js"></script>
     <script src="./js/slick.js"></script>
     <script src="./js/script.js"></script>
+
+    <script src="js/wow.min.js"></script>
     <script>
+    new WOW().init();
+    </script>
+
+    <script>
+        
+      var image = document.getElementsByClassName('content');
+      new simpleParallax(image, {
+            scale: 1.6,
+            orientation: 'right'
+      });
+
         TweenMax.from(".logo", 1.6, {
             delay: .4,
             opacity: 0,
@@ -116,7 +170,7 @@
             y: -20,
             ease: Expo.easeInOut
         }, .2);
-        TweenMax.from(".heading", 1.6, {
+        TweenMax.from(".rheading", 1.6, {
             delay: .3,
             opacity: 0,
             y: 0,
@@ -173,6 +227,7 @@
                 autoplaySpeed: 2400,
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                arrows: false,
                 speed: 1800,
                 cssEase: 'cubic-bezier(.84, 0, .08, .99)',
                 asNavFor: '.text-slider'
