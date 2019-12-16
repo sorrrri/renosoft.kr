@@ -9,6 +9,9 @@
     <link rel="shortcut icon" href="images/renosoft.ico">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style_intro.css">
+    <link rel="stylesheet" href="css/style_content.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
 </head>
 
 <body>
@@ -21,7 +24,6 @@
         <span></span>
         <span></span>
     </div>
-    <li class="cursor"></li>
     <div class="temp"></div>
     <div class="first-block"></div>
     <div class="second-block"></div>
@@ -46,24 +48,41 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </aside>
+    <header>
+        <div class="logo">
+            <a href="index.html"></a>
+        </div>
+        <nav>
+            <ul class="menu active">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ion-icon name="menu" class="i-menu"></ion-icon>
+        </nav>
+    </header>
+    <ul class="media">
+        <li>
+            <a href="#">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+        </li>
+    </ul>
 
-    <div class="wrapper main">
-        <header>
-            <div class="logo">
-                <a href="index.html"></a>
-            </div>
-            <nav>
-                <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="works.html">Works</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <ion-icon name="menu" class="i-menu"></ion-icon>
-            </nav>
-        </header>
+    <div class="wrapper">
 
-        <section>
+        <section class="main">
             <h1 class="heading">
                 <span>renosoft</span>
             </h1>
@@ -73,29 +92,144 @@
                 <p>RENOSOFT 는 금융, 공공, 민간 다양한 Industry에 대한 실무 경험과 전문 Management Team으로 구성된 SI Group 입니다.</p>
             </div>
         </section>
-        <ul class="media">
-            <li>
-                <a href="#">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-            </li>
-        </ul>
-        <canvas class="js-canvas"></canvas>
+        
+        <section class="about">
+            <h1 class="heading">
+                <span>About Us</span>
+            </h1>
+
+            <div class="content">
+                <div class="title">
+                    <p>
+                        하루, 한달, 1년.. 한 걸음씩이라 표현해보죠. 첫 걸음을 떼고 지금 여기에 있네요.
+                        시간이 흘렀고 이 함축된 ‘시간’에 많은 이야기가 있네요.
+                        결국 참 역동적 이였다고 함축할 수 있겠네요.
+                        이해 관계 속, 하나의 목표를 찾아 진행된 수많은 프로젝트가 그저 놀라움 그 자체라 함축해 볼 께요.
+                    </p>
+                    <p>
+                        이해와 목표를 같이 하지만 의견이 다른 주문을 통해 디테일을 만들어내는 지금까지의 과정..
+                        참 멋졌습니다.
+                        다만, 시스템? 프로세스? 과정상 필요한 프레임웍 구조가 딱딱하면 결과물이 창의적이지 않습니다.
+                    </p>
+                    <p>
+                        그래서 레노는 보다 자신있게 우리를 표현해 보고자 합니다.
+                        진부하지 않고 창의적으로.. Insight. 인사이트.
+                        목적은 세련되게 표현해 보는 것..
+                        그래서 재미를 주는 것..
+                        이 과정의 목표가
+                        보다 효과적으로 결과에 접근할 수 있도록 하는 것. 이는 우리가 잘 이해하는 고객감성, 편리, 표현력 그리고 데이터 알고리즘입니다.
+                        우리가 나아가는 목표를 몇 가지 단어로 구체화 하고자 합니다.
+                        Platform = Data, Social, Public, Shraring
+                    </p>
+                </div>
+                <div class="ci">
+                    <p>
+                        RENOSOFT : REvolution + inNOvation
+                        디지털 채널을 국한되 해석하지않고 메시지의 목표를 구체화 할 수 있는 기술과 UI.UX를 사명에 메세지화 했습니다.
+                    </p>
+                    <p>
+                        마치 지중해 햇볕, 북극 아이슬란드 오로라 달빛이 비추는 드넓은 바다를 항해하는 작디작은 돛단배.
+                        다소 유치하지만 이보다 이상적인 디지털 노마드를 표현하기 아름다운 단어가 있을까? This is RENO
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="works">
+
+            <h1 class="heading">
+                <span>Our Works</span>
+            </h1>
+
+            <div class="content">
+                <div class="text-slider-wrapper">
+                    <div class="text-slider">
+                        <h2 class="text-slide">웰스토리 모바일오피스<br>어플리케이션 구축</h2>
+                        <h2 class="text-slide">르노삼성 챗봇 개발</h2>
+                        <h2 class="text-slide">세번째 프로젝트</h2>
+                        <h2 class="text-slide">네번째 프로젝트</h2>
+                    </div>
+                </div>
+
+                <div class="slider-control">
+                    <div class="prev"><button type="button">
+                            <ion-icon name="arrow-back"></ion-icon>
+                        </button></div>
+                    <div class="next"><button type="button">
+                            <ion-icon name="arrow-forward"></ion-icon>
+                        </button></div>
+                </div>
+
+                <div class="blocks">
+                    <div class="block-1"></div>
+                    <div class="block-2"></div>
+                    <div class="block-3"></div>
+                </div>
+
+                <div class="overlay"></div>
+
+                <div class="image-slider" onclick="modal('timeline')">
+                    <div class="image-slide" id="one"
+                        style="background: url(./images/works/welstory.jpg) no-repeat 50% 50%; background-size: cover;">
+                    </div>
+                    <div class="image-slide" id="two"
+                        style="background: url(./images/works/rsm.jpg) no-repeat 50% 50%; background-size: cover;">
+                    </div>
+                    <div class="image-slide" id="three"
+                        style="background: url(./images/works/welstory.jpg) no-repeat 50% 50%; background-size: cover;">
+                    </div>
+                    <div class="image-slide" id="four"
+                        style="background: url(./images/works/rsm.jpg) no-repeat 50% 50%; background-size: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact">
+
+            <h1 class="heading">
+                <span>Contact Us</span>
+            </h1>
+
+            <div class="content">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12676.335222433147!2d127.08755195286481!3d37.41149399999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ae8e2b007da24ad!2z6rK96riw6riw7JeF7ISx7J6l7IS87YSw!5e0!3m2!1sko!2skr!4v1575945519541!5m2!1sko!2skr"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+
+            <div class="information">
+                <div>
+                    <small>채용, 대외홍보, 사업 문의</small>
+                    <ul>
+                        <li><a href="mailto:renosoft@renosoft.kr">renosoft@renosoft.kr</a></li>
+                        <li>전화 : 031-751-4234 </li>
+                        <li>팩스 : 031-751-4235</li>
+                        <li>담당자 : 안덕곤 (010-2677-4234)</li>
+                    </ul>
+                </div>
+                <div>
+                    <small>주소</small>
+                    <ul>
+                        <li>경기도 성남시 수정구 창업로 42 (제2판교테크노밸리) 경기기업성장센터 615호</li>
+                    </ul>
+                    <small>찾아오는길</small>
+                    <ul>
+                        <li>신분당선 – 판교역 2번출구 >> 도보3분 >> 판교역버스정류장 55번 버스 >> 8분>> (종점)제2판교테크노밸리 경기기업성장센터</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div class="modal modal-timeline">
+            <iframe src="timeline.html" frameborder="0"></iframe>
+        </div><!-- end Modal -->
         <div class="modal-backdrop"></div>
     </div>
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/TweenMax.min.js"></script>
+    <script src="./js/slick.js"></script>
     <script src="./js/script.js"></script>
     <script>
         $('.menu').click(function () {
@@ -108,6 +242,11 @@
         })
     </script>
     <script>
+        TweenMax.from(".wrapper", 1.6, {
+            delay: 4,
+            autoAlpha: 0,
+            ease: Expo.easeInOut
+        });
         TweenMax.from("header", 1.6, {
             delay: 4.4,
             opacity: 0,
@@ -167,6 +306,55 @@
             y: 40,
             ease: Expo.easeInOut
         }, .2);
+    </script>
+    
+    <script>
+        var sickPrimary = {
+            autoplay: true,
+            autoplaySpeed: 2400,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            speed: 1800,
+            cssEase: 'cubic-bezier(.84, 0, .08, .99)',
+            asNavFor: '.text-slider',
+            centerMode: true,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next')
+        }
+
+        var sickSecondary = {
+            autoplay: true,
+            autoplaySpeed: 2400,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 1800,
+            cssEase: 'cubic-bezier(.84, 0, .08, .99)',
+            asNavFor: '.image-slider',
+            prevArrow: $('.prev'),
+            nextArrow: $('.next')
+        }
+
+        var ua = window.navigator.userAgent;
+        var windowWidth = $(window).width();
+
+        if (windowWidth < 991 || /lgtelecom/i.test(ua) || /Android/i.test(ua) || /blackberry/i.test(ua) || /iPhone/i
+            .test(ua) || /ipad/i
+            .test(ua) || /samsung/i.test(ua) || /symbian/i.test(ua) || /sony/i.test(ua) || /SCH-/i.test(ua) || /SPH-/i
+            .test(ua)) {
+            var sickPrimary = {
+                autoplay: true,
+                autoplaySpeed: 2400,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                speed: 1800,
+                cssEase: 'cubic-bezier(.84, 0, .08, .99)',
+                asNavFor: '.text-slider'
+            }
+        }
+
+        $('.image-slider').slick(sickPrimary);
+        $('.text-slider').slick(sickSecondary);
     </script>
 </body>
 

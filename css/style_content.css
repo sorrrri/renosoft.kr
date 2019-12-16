@@ -11,10 +11,12 @@
 
 .heading span {animation-delay: 2s}
 .heading:after {animation-delay: 1.4s}
-.content { position:relative; overflow:hidden; margin: 0 calc(100%/7); height:440px; } 
+.content { position:relative; overflow:hidden; margin: 0 calc(100%/7); min-height:300px; } 
 
 .about .title p { width:calc(100%/5*2.5); text-align: justify; word-break:keep-all; font-size:18px } 
 .about .ci { margin-left:calc(100%/5*3); background:url(../images/logo.png) no-repeat; background-size: 50%; padding-top:4rem; margin-top:-20rem } 
+
+.works .content {margin:0 -5rem}
 .works .image-slider { z-index: 0; margin: 0 auto; padding: 0; width: 100%; height: 100vh; } 
 .works .image-slide { height: 100vh; margin: 0 auto; } 
 .works .slick-slide.slick-center { transform: scale(1.2); transition: transform .8s 1.4s cubic-bezier(.84, 0, .08, .99); } 
@@ -31,7 +33,9 @@
 .works .text-slider { margin: 0%; padding: 0%; height: 100vh; } 
 .works .text-slide { color: #fff; font-weight: lighter; padding-left: 10%; } 
 .works .modal-timeline { max-width: 760px; } 
-.contact .information { background:#262d38; z-index:5; padding:2rem; position:absolute; right:5rem; bottom:3rem; font-weight: bold; display: flex; justify-content: space-between; font-family: 'Nanum Square' } 
+
+.contact .content {height:500px}
+.contact .information { background:#262d38; z-index:5; padding:5rem 12rem; margin: 5rem -5rem 0; font-weight: bold; display: flex; justify-content: space-between; font-family: 'Nanum Square' } 
 .contact .information div:first-of-type {margin-right:2rem}
 .contact .information small { color: #737679; display:block; margin-bottom:.5rem } 
 .contact .information ul { margin-bottom: 1rem } 

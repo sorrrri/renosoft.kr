@@ -1,3 +1,40 @@
+$(document).ready(function() {	
+	/* ---------- Menu --------- */
+	$(window).scroll(function(){		
+			let currentScroll = $(this).scrollTop();
+			if(currentScroll > 175){
+				$('header .i-menu').addClass('active');
+        $('header .menu').removeClass('active');
+        $(aside).addClass('active');
+			}
+			else{
+				$('header .i-menu').removeClass('active');
+				$('header .menu').addClass('active');
+        $(aside).removeClass('active');
+			}
+			if(stopAnimation == true){
+				if(currentScroll > skills){
+					$('.col-1, .col-2, .col-3').each(function(j){
+						var $this = $(this);
+						setTimeout(function () {
+							$this.addClass('unhide'); 
+						}, 200 * j );
+					});
+					stopAnimation = false;
+				}
+			}
+	});
+	/* ------- End Menu ------- */
+	
+	/* ------- Scroll ------- */
+	$('a[href^="#"]').click(function(){
+		let target = this.hash,
+		$target = $(target).offset().top;
+		//console.log(target, $target);
+		$('html, body').animate({'scrollTop': $target}), 1500;
+	});
+	/* ------- End Scroll ------- */
+});
 
 
 
