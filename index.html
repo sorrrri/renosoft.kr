@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style_intro.css">
 </head>
 
-<body class="main">
+<body>
     <div class="grid">
         <span></span>
         <span></span>
@@ -36,20 +36,7 @@
             <li>G</li>
         </ul>
     </div>
-    <header>
-        <div class="logo">
-            <a href="index.html"></a>
-        </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="works.html">Works</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <ion-icon name="menu" class="i-menu"></ion-icon>
-        </nav>
-    </header>
+
     <aside>
         <ion-icon name="close" class="close"></ion-icon>
         <ul>
@@ -60,36 +47,52 @@
         </ul>
     </aside>
 
+    <div class="wrapper main">
+        <header>
+            <div class="logo">
+                <a href="index.html"></a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ion-icon name="menu" class="i-menu"></ion-icon>
+            </nav>
+        </header>
 
-    <section>
-        <h1 class="heading">
-            <span>renosoft</span>
-        </h1>
-        <div class="content">
-            <p>성실하게 고객 요청의 가이드를 구현해 나가는 것만이 정답이 아닙니다.</p>
-            <p>기획 단계에서 고객의 의도와 방향성을 이해하고 다시 한번 고민해 결과물에 경험을 담아내야 합니다.</p>
-            <p>RENOSOFT 는 금융, 공공, 민간 다양한 Industry에 대한 실무 경험과 전문 Management Team으로 구성된 SI Group 입니다.</p>
-        </div>
-    </section>
-    <ul class="media">
-        <li>
-            <a href="#">
-                <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-        </li>
-    </ul>
-    <canvas class="js-canvas"></canvas>
-
+        <section>
+            <h1 class="heading">
+                <span>renosoft</span>
+            </h1>
+            <div class="content">
+                <p>성실하게 고객 요청의 가이드를 구현해 나가는 것만이 정답이 아닙니다.</p>
+                <p>기획 단계에서 고객의 의도와 방향성을 이해하고 다시 한번 고민해 결과물에 경험을 담아내야 합니다.</p>
+                <p>RENOSOFT 는 금융, 공공, 민간 다양한 Industry에 대한 실무 경험과 전문 Management Team으로 구성된 SI Group 입니다.</p>
+            </div>
+        </section>
+        <ul class="media">
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+        </ul>
+        <canvas class="js-canvas"></canvas>
+        <div class="modal-backdrop"></div>
+    </div>
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/TweenMax.min.js"></script>
@@ -105,6 +108,12 @@
         })
     </script>
     <script>
+        TweenMax.from("header", 1.6, {
+            delay: 4.4,
+            opacity: 0,
+            y: 30,
+            ease: Expo.easeInOut
+        });
         TweenMax.from(".logo", 1.6, {
             delay: 4.4,
             opacity: 0,

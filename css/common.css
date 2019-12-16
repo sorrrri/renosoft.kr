@@ -8,7 +8,7 @@
   }
 body { overflow:hidden; width: 100vw; height:100vh; position:relative; font-family:'Poppins'; user-select: none; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background: linear-gradient(90deg, #F1F2F3 10%,#e8e9ea 10%); margin: 0; padding: 0; } 
 
-aside { position:absolute; right:-86vw; cursor:auto; width:86vw; height: 100vh; box-sizing:border-box; background: #262d38; color: white; padding: 1rem; z-index: 50; transition: transform ease-in-out .4s } 
+aside { margin-top: -64px; position:absolute; right:-86vw; cursor:auto; width:86vw; height: 100vh; box-sizing:border-box; background: #262d38; color: white; padding: 1rem; z-index: 50; transition: transform ease-in-out .4s } 
  
 
 a { cursor:none; text-decoration: none; color: #262d38; } 
@@ -40,7 +40,7 @@ nav, .menu { display:flex }
 .heading span { display:block; opacity: 0; animation: appear .0001s linear forwards } 
 .heading:after { content: ''; top: 0; left: 0; width: 0%; height: 100%; background: #f5af19; position: absolute; animation: rev-text 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards; animation-delay:.2s } 
 
-section { height:100vh; overflow-y:auto; flex:1 1 auto; border-right: 1px solid #d3d8dd; padding:0 5rem; z-index:0; box-sizing: border-box; } 
+section { height:100vh; overflow-y:auto; flex:1 1 auto; padding:0 5rem; z-index:0; box-sizing: border-box; } 
 .desc { font-size:20px } 
 
 
