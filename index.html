@@ -26,18 +26,6 @@
         <span></span>
         <span></span>
     </div>
-    <div class="first-block"></div>
-    <div class="loader">
-        <ul>
-            <li>L</li>
-            <li>O</li>
-            <li>A</li>
-            <li>D</li>
-            <li>I</li>
-            <li>N</li>
-            <li>G</li>
-        </ul>
-    </div>
 
     <aside>
         <ion-icon name="close" class="close"></ion-icon>
@@ -93,15 +81,12 @@
         </section>
 
         <section id="about" class="about">
-            <div class="parallax-01">
-                <img src="images/logo_bg.png" class="logo-bg" />
+            <div class="parallax-logo">
+                <img src="images/logo_bg.png" />
             </div>
             <h1 class="heading wow slideInLeft">
                 <span>About Us</span>
             </h1>
-            <div class="parallax-02">
-                <img src="images/bg_01.jpg" class="intro-img" alt="">
-            </div>
 
             <div class="content">
                 <div class="title">
@@ -163,7 +148,7 @@
                         </button></div>
                 </div>
 
-                <div class="overlay"></div>
+                <div class="overlay" onclick="modal('timeline')"></div>
 
                 <div class="image-slider wow fadeIn" onclick="modal('timeline')">
                     <div class="image-slide" id="one"
@@ -180,7 +165,7 @@
                     </div>
                 </div>
             </div>
-            <div class="cards">
+            <div class="cards" onclick="modal('timeline')">
                 <div class="card wow fadeInUp" data-wow-delay=".2s">
                     <div class="img"><img src="./images/works/welstory.jpg" alt="" /></div>
                     <ul>
@@ -237,7 +222,7 @@
             <h1 class="heading wow slideInLeft">Contact Us</h1>
 
             <div class="content">
-                <iframe class="iframe wow fadeIn"
+                <iframe class="iframe wow fadeInDown"
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12676.335222433147!2d127.08755195286481!3d37.41149399999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ae8e2b007da24ad!2z6rK96riw6riw7JeF7ISx7J6l7IS87YSw!5e0!3m2!1sko!2skr!4v1575945519541!5m2!1sko!2skr"
                     width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
@@ -271,94 +256,82 @@
         </div><!-- end Modal -->
         <div class="modal-backdrop"></div>
     </div>
+    <div class="loading">Loading&#8230;</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.11/skrollr.min.js'></script>
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/TweenMax.min.js"></script>
     <script src="./js/wow.min.js"></script>
     <script src="./js/slick.js"></script>
-    <script src="./js/script.js"></script>
     <script>
         new WOW().init();
     </script>
     <script>
         TweenMax.from(".wrapper", 1.6, {
-            delay: 3,
+            delay: .5,
             autoAlpha: 0,
             ease: Expo.easeInOut
         });
         TweenMax.from("header", 1.6, {
-            delay: 3.4,
+            delay: .6,
             opacity: 0,
             y: 30,
             ease: Expo.easeInOut
         });
         TweenMax.from(".logo", 1.6, {
-            delay: 3.4,
+            delay: .7,
             opacity: 0,
             y: 30,
             ease: Expo.easeInOut
         });
         TweenMax.staggerFrom(".grid span", 2, {
-            delay: 3.5,
+            delay: .8,
             opacity: 0,
             y: -20,
             ease: Expo.easeInOut
         }, .2);
         TweenMax.staggerFrom(".menu li", 2, {
-            delay: 3.5,
+            delay: .9,
             opacity: 0,
             y: -20,
             ease: Expo.easeInOut
         }, .2);
         TweenMax.from(".i-menu", 2, {
-            delay: 3.5,
+            delay: 1,
             opacity: 0,
             y: -20,
             ease: Expo.easeInOut
         });
         TweenMax.from(".main", 1.6, {
-            delay: 3.6,
+            delay: 1.2,
             opacity: 0,
             y: 30,
             ease: Expo.easeInOut
         });
         TweenMax.staggerFrom(".main .content p", 1.6, {
-            delay: 3.7,
+            delay: 1.3,
             opacity: 0,
             y: 60,
             ease: Expo.easeInOut
         }, .2);
         TweenMax.from(".main .simpleParallax", 1.6, {
-            delay: 3.8,
+            delay: 1.4,
             opacity: 0,
             y: 30,
             ease: Expo.easeInOut
         });
         TweenMax.from(".media", 2, {
-            delay: 4,
+            delay: 1.5,
             opacity: 0,
             y: 40,
             ease: Expo.easeInOut
         });
         TweenMax.staggerFrom(".media li", 2, {
-            delay: 4,
+            delay: 1.6,
             opacity: 0,
             y: 40,
             ease: Expo.easeInOut
         }, .2);
-    </script>
-    <script>
-        var image = document.getElementsByClassName('intro-img');
-        new simpleParallax(image, {
-            scale: 1.6
-        });
-        var image = document.getElementsByClassName('logo-bg');
-        new simpleParallax(image, {
-            scale: 1.6,
-            orientation: 'right'
-        });
     </script>
     <script>
         var sickPrimary = {
@@ -401,8 +374,8 @@
             responsive: [{
                     breakpoint: 1024,
                     settings: {
-                        slidesToShow: 4,
-                        slidesToScroll: 4,
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
                         infinite: true,
                         dots: true
                     }
@@ -410,8 +383,8 @@
                 {
                     breakpoint: 600,
                     settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3
+                        slidesToShow: 2,
+                        slidesToScroll: 1
                     }
                 },
                 {
@@ -427,6 +400,7 @@
             ]
         });
     </script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
