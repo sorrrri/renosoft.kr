@@ -3,7 +3,7 @@
  url(../fonts/NanumSquareL.ttf) format('truetype'),
  url(../fonts/NanumSquareL.otf) format('opentype'); } 
  * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; } 
-body { overflow-x:hidden; width: 100vw; height:100vh; position:relative; font-family:'Poppins'; line-height: 1.5; user-select: none; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background: linear-gradient(90deg, #F1F2F3 10%,#e8e9ea 10%); margin: 0; padding: 0; } 
+body { overflow-x:hidden; width: 100vw; height:100vh; position:relative; font-family: "Nanum Square", 'Poppins'; font-size: 20px; line-height: 1.5; user-select: none; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background: linear-gradient(90deg, #F1F2F3 10%,#e8e9ea 10%); margin: 0; padding: 0; } 
 
 
 
@@ -14,7 +14,7 @@ li { list-style: none }
 button { border: 0 none; background: #262d38; font-family: Poppins; letter-spacing: 2px; padding: 1rem 3rem; color: white } 
 button:focus { outline: none; } 
 
-.wrapper { display:none; flex-direction: column; } 
+.wrapper { flex-direction: column; } 
 iframe { width:100%; height:100% } 
 .active { visibility: visible !important; opacity: 1 !important } 
 
@@ -36,14 +36,14 @@ header { flex:0 0 auto; z-index: 10; padding: 2rem; position: fixed; width: 100%
 header.scroll-header { background:white } 
 nav, .menu { display:flex; align-items: center; } 
 .menu, .i-menu { opacity: 0; visibility: hidden; transition: ease-in-out .2s; } 
-.menu li { padding-left: 3rem; } 
+.menu li { padding-left: 3rem; font-family: "Poppins"; font-size:18px } 
 .menu li a { font-weight: bold; } 
 .i-menu { font-size:30px; cursor: pointer } 
 .logo a { background: url(../images/logo.png) no-repeat; width:7rem; height:2rem; background-size:contain; display: block; } 
  
 
 .heading { z-index:10; font-family: 'Poppins'; font-size: 60px; margin-top:0 } 
-.content { font-family:'Nanum Square'; position:relative; font-weight:500; font-size: 20px; word-break:keep-all } 
+.content { font-family:'Nanum Square'; position:relative; font-weight:500; word-break:keep-all } 
 .content p { margin-top: 0px } 
 section { position:relative; padding: 5rem 10%; z-index:0; box-sizing: border-box; } 
 .desc { font-size:20px } 
@@ -93,9 +93,8 @@ footer a { color: white }
  
  
 @media screen and (max-width:990px){
- .loader ul li { font-size:18px; margin:3px } 
- .third-block, .menu, .grid, .media, .simpleParallax, .cards { display:none } 
- body { background:#e8e9ea; } 
+ .third-block, .menu, .grid, .media, .parallax-logo, .cards { display:none } 
+ body { background:#e8e9ea; font-size:18px } 
  aside { right:-86vw; width:86vw; } 
  aside.active { transform: translateX(-86vw) } 
  header { padding: 1rem; background:#e8e9ea; } 
@@ -110,7 +109,7 @@ footer a { color: white }
 
  
  .heading { position: relative; top: auto; left:auto } 
- .about .ci { background-position:top center; background-size:40%; margin-top:2rem; padding-top:3rem } 
+ .about .ci { border-radius:.5rem; background-position:top 2rem center; background-size:40%; margin-top:2rem; padding:5rem 2rem 2rem } 
 
  .works { overflow-y:hidden } 
  .works .content { height:60vh !important; } 
@@ -127,7 +126,8 @@ footer a { color: white }
  
  .works .timeline-item { height:30vh; width:40% } 
  
- .contact { margin-bottom: 5rem; } 
+ .clients .slick-slider {padding: 2rem}
+
  .contact iframe { height:40vh } 
  .contact .information { display:none } 
  
@@ -179,14 +179,14 @@ footer a { color: white }
  }
  
  @keyframes appear { 
- 0% { opacity: 0; } 
- 100% { opacity: 1 } 
+ 0% { opacity: 0; visibility: hidden; } 
+ 100% { opacity: 1; visibility: visible; } 
  }
  
 
 
  /* Absolute Center CSS Spinner */
-.loading { position: fixed; z-index: 999; height: 2em; width: 2em; overflow: show; margin: auto; top: 0; left: 0; bottom: 0; right: 0; } 
+.loading { position: fixed; z-index: 999; height: 2em; width: 2em; overflow: show; margin: auto; top: 0; left: 0; bottom: 0; right: 0; animation: appear reverse 2s forwards; } 
 
 /* Transparent Overlay */
 .loading:before { background:white; content: ''; display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100%; } 

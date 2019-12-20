@@ -51,55 +51,41 @@ $('.i-menu').click(function () {
 
 
 
-function onReady(callback) {
-	var intervalId = window.setInterval(function() {
-	  if (document.getElementsByTagName('body')[0] !== undefined) {
-		window.clearInterval(intervalId);
-		callback.call(this);
-	  }
-	}, 1000);
-  }
-  
-  function setVisible(selector, visible) {
-	document.querySelector(selector).style.display = visible ? 'block' : 'none';
-  }
-  
-  onReady(function() {
-	setVisible('.wrapper', true);
-	setVisible('.loading', false);
-  });
+// scroll parallax
 
-  // scroll parallax
-let didScroll = false;
-let parallaxMain = document.querySelectorAll('.main');
-let parallaxLogo = document.querySelectorAll('.parallax-logo');
-let parallaxCi = document.querySelectorAll('.ci');
-let parallaxCards = document.querySelectorAll('.cards');
-
-const scrollInProgress = () => {
-	didScroll = true
-}
-
-const raf = () => {
-	if(didScroll) {
-		parallaxMain.forEach((element, index) => {
-			element.style.filter = "blur("+ window.scrollY / 30 + "px)"
-		});
-		parallaxLogo.forEach((element, index) => {
-			element.style.transform = "translateX("+ window.scrollY / 3 + "%)"
-		});
-		parallaxCi.forEach((element, index) => {
-			element.style.transform = "translateX("+ window.scrollY / -20 + "%)"
-		});		
-		parallaxCards.forEach((element, index) => {
-			element.style.transform = "translateX("+ window.scrollY / -10 + "px)"
-		})
-		didScroll = false;
-	} 
+var windowWidth = $(window).width();
+if (windowWidth > 990) {
+	let didScroll = false;
+	let parallaxMain = document.querySelectorAll('.main');
+	let parallaxLogo = document.querySelectorAll('.parallax-logo');
+	let parallaxCi = document.querySelectorAll('.ci');
+	let parallaxCards = document.querySelectorAll('.cards');
+	
+	const scrollInProgress = () => {
+		didScroll = true
+	}
+	
+	const raf = () => {
+		if (didScroll) {
+			parallaxMain.forEach((element, index) => {
+				element.style.filter = "blur(" + window.scrollY / 30 + "px)"
+			});
+			parallaxLogo.forEach((element, index) => {
+				element.style.transform = "translateX(" + window.scrollY / 10 + "%)"
+			});
+			parallaxCi.forEach((element, index) => {
+				element.style.transform = "translateY(" + window.scrollY / -8 + "%)"
+			});
+			parallaxCards.forEach((element, index) => {
+				element.style.transform = "translateX(" + window.scrollY / -10 + "px)"
+			})
+			didScroll = false;
+		}
+		requestAnimationFrame(raf);
+	}
+	
+	
 	requestAnimationFrame(raf);
+	window.addEventListener('scroll', scrollInProgress)
+	
 }
-
-
-requestAnimationFrame(raf);
-window.addEventListener('scroll', scrollInProgress)
-

@@ -46,53 +46,39 @@ $('.i-menu').click(function () {
 	$('.close').css("transition", ".6s");
 });
 
-function onReady(callback) {
-	var intervalId = window.setInterval(function () {
-		if (document.getElementsByTagName('body')[0] !== undefined) {
-			window.clearInterval(intervalId);
-			callback.call(this);
-		}
-	}, 1000);
-}
-
-function setVisible(selector, visible) {
-	document.querySelector(selector).style.display = visible ? 'block' : 'none';
-}
-
-onReady(function () {
-	setVisible('.wrapper', true);
-	setVisible('.loading', false);
-});
-
 // scroll parallax
-var didScroll = false;
-var parallaxMain = document.querySelectorAll('.main');
-var parallaxLogo = document.querySelectorAll('.parallax-logo');
-var parallaxCi = document.querySelectorAll('.ci');
-var parallaxCards = document.querySelectorAll('.cards');
 
-var scrollInProgress = function scrollInProgress() {
-	didScroll = true;
-};
+var windowWidth = $(window).width();
+if (windowWidth > 990) {
+	var didScroll = false;
+	var parallaxMain = document.querySelectorAll('.main');
+	var parallaxLogo = document.querySelectorAll('.parallax-logo');
+	var parallaxCi = document.querySelectorAll('.ci');
+	var parallaxCards = document.querySelectorAll('.cards');
 
-var raf = function raf() {
-	if (didScroll) {
-		parallaxMain.forEach(function (element, index) {
-			element.style.filter = "blur(" + window.scrollY / 30 + "px)";
-		});
-		parallaxLogo.forEach(function (element, index) {
-			element.style.transform = "translateX(" + window.scrollY / 3 + "%)";
-		});
-		parallaxCi.forEach(function (element, index) {
-			element.style.transform = "translateX(" + window.scrollY / -20 + "%)";
-		});
-		parallaxCards.forEach(function (element, index) {
-			element.style.transform = "translateX(" + window.scrollY / -10 + "px)";
-		});
-		didScroll = false;
-	}
+	var scrollInProgress = function scrollInProgress() {
+		didScroll = true;
+	};
+
+	var raf = function raf() {
+		if (didScroll) {
+			parallaxMain.forEach(function (element, index) {
+				element.style.filter = "blur(" + window.scrollY / 30 + "px)";
+			});
+			parallaxLogo.forEach(function (element, index) {
+				element.style.transform = "translateX(" + window.scrollY / 10 + "%)";
+			});
+			parallaxCi.forEach(function (element, index) {
+				element.style.transform = "translateY(" + window.scrollY / -8 + "%)";
+			});
+			parallaxCards.forEach(function (element, index) {
+				element.style.transform = "translateX(" + window.scrollY / -10 + "px)";
+			});
+			didScroll = false;
+		}
+		requestAnimationFrame(raf);
+	};
+
 	requestAnimationFrame(raf);
-};
-
-requestAnimationFrame(raf);
-window.addEventListener('scroll', scrollInProgress);
+	window.addEventListener('scroll', scrollInProgress);
+}
