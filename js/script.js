@@ -35,7 +35,7 @@ $(".modal-backdrop").on("click", function () {
 	$(".modal-backdrop, aside, .modal").removeClass("active");
 });
 
-$(".close").on("click", function () {
+$(".close, aside a").on("click", function () {
 	$("aside, .modal-backdrop").removeClass("active");
 });
 
