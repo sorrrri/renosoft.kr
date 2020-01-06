@@ -7,197 +7,978 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>renosoft - our works</title>
     <link rel="shortcut icon" href="images/renosoft.ico">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/style_content.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style_content.css" media="screen and (min-width:490px)">
+    <link rel="stylesheet" href="./css/animate.css">
 </head>
 
 <body>
-    <aside class="menu-mobile">
-        <ion-icon name="close" class="close"></ion-icon>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="works.html">Works</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </aside>
-
-    <div class="wrapper">
-        <div class="grid">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="cursor"></div>
+    <div class="wrapper works">
+        <aside>
+            <ion-icon name="close" class="close"></ion-icon>
+            <ul>
+                <li><a href="index.html"><span>Home</span></a></li>
+                <li><a href="about.html"><span>About</span></a></li>
+                <li><a href="works.html"><span>Works</span></a></li>
+                <li><a href="contact.html"><span>Contact</span></a></li>
+            </ul>
+        </aside>
         <header>
             <div class="logo">
-                <a href="index.html"></a>
+                <a href="index.html">renosoft</a>
             </div>
             <nav>
-                <ul class="menu">
+                <ul class="menu active">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="works.html">Works</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <ion-icon name="menu" class="i-menu"></ion-icon>
+                <ul class="toggle-menu">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <!-- <ion-icon name="menu" class="i-menu"></ion-icon> -->
             </nav>
         </header>
-
-        <section class="works">
-
-            <h1 class="heading">
-                <span>Our Works</span>
-            </h1>
+        <section>
+            <div class="title">
+                <h1 class="heading">Our Works</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam alias voluptatum illo tempore atque
+                    laborum impedit!</p>
+                <div id="year">2019</div>
+                <ul>
+                    <li><a href="#2020">2020</a></li>
+                    <li><a href="#2019">2019</a></li>
+                    <li><a href="#2018">2018</a></li>
+                    <li><a href="#2017">2017</a></li>
+                    <li><a href="#2016">2016</a></li>
+                    <li><a href="#2015">2015</a></li>
+                    <li><a href="#2014">2014</a></li>
+                    <li><a href="#2013">2013</a></li>
+                    <li><a href="#2012">2012</a></li>
+                </ul>
+            </div>
 
             <div class="content">
-                <div class="text-slider-wrapper">
-                    <div class="text-slider">
-                        <h2 class="text-slide">웰스토리 모바일오피스<br>어플리케이션 구축</h2>
-                        <h2 class="text-slide">르노삼성 챗봇 개발</h2>
-                        <h2 class="text-slide">세번째 프로젝트</h2>
-                        <h2 class="text-slide">네번째 프로젝트</h2>
+                <div class="timeline">
+                    <div id="2019" class="year timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="./images/works/welstory.jpg" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2019.07 ~ 2019.12</p>
+                            <h2 class="timeline-title">삼성 웰스토리</h2>
+                            <p class="timeline-excerpt">삼성 웰스토리 모바일오피스 구축</p>
+                        </div>
+                        <div class="timeline-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod amet voluptatum alias
+                                reiciendis ex ea
+                                voluptatem vel quas, dicta sequi dolorum fugit porro totam facere, omnis dolore. Fuga,
+                                pariatur
+                                velit.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp" onclick="location.href='/works/2019_rsm.html'">
+                        <div class="timeline-photo">
+                            <img src="./images/works/rsm.jpg" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2019.02 ~ 2019.08</p>
+                            <h2 class="timeline-title">르노 삼성</h2>
+                            <p class="timeline-excerpt">르노 삼성 챗봇 시스템 개발</p>
+                        </div>
+                        <div class="timeline-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dicta officiis culpa dolor
+                                fugiat
+                                facilis dolorum atque, eum explicabo at iste iure, repellendus distinctio aliquam
+                                praesentium
+                                consequuntur. In, quaerat doloribus!</p>
+                            <p>Eveniet quas dolor, ratione similique cupiditate quae fugiat unde nesciunt consectetur
+                                explicabo
+                                obcaecati, tempore architecto odit harum dolorum fugit delectus minus, distinctio
+                                soluta. Optio
+                                accusamus, nihil nesciunt magni et aspernatur.</p>
+                            <p>Voluptates consequatur officia voluptatibus magnam pariatur, consequuntur quas recusandae
+                                perferendis
+                                dignissimos inventore asperiores eveniet, eos ipsum saepe quibusdam, deserunt iure.
+                                Fugit enim
+                                expedita voluptatum harum eligendi suscipit perferendis,
+                                voluptates voluptate.</p>
+                            <p>In eum accusamus, necessitatibus a corrupti inventore quidem molestiae sint eaque tempore
+                                quo ducimus
+                                expedita dicta deserunt impedit amet doloremque fugit. Earum illo nam maxime sint quas
+                                maiores enim
+                                sunt.</p>
+                            <p>Pariatur deserunt eveniet quae error. Debitis sapiente tempora neque dolores modi
+                                voluptatem
+                                architecto dicta illum molestias nobis dolorum sint vitae totam, nihil nisi iusto
+                                reiciendis ad quam
+                                a suscipit repellat?</p>
+                            <p>Aut unde sed sit ab iure officiis suscipit magni laborum tempore ea quaerat, illo dolorum
+                                quisquam,
+                                necessitatibus totam est tenetur provident voluptates alias eveniet consequatur ullam
+                                magnam.
+                                Sapiente, illum in.</p>
+                        </div>
+                    </div>
+                    <div id="2018" class="year timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/70" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2018</p>
+                            <h2 class="timeline-title">롯데카드</h2>
+                            <p class="timeline-excerpt">롯데카드 LP 차세대 구축 사업 (Cloud)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/69" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2018</p>
+                            <h2 class="timeline-title">삼성전자</h2>
+                            <p class="timeline-excerpt">삼성페이 디자인. 퍼블 구축 및 유지보수 (구축성 업무 전환)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/68" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2018</p>
+                            <h2 class="timeline-title">KBS</h2>
+                            <p class="timeline-excerpt">KBS 재난앱 구축 사업 품질검증</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/67" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2018</p>
+                            <h2 class="timeline-title">디유넷</h2>
+                            <p class="timeline-excerpt">디유넷(동아일보 자회사) 학사관리 시스템(LMS) 구축 사업</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/66" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2018</p>
+                            <h2 class="timeline-title">IBK 기업은행</h2>
+                            <p class="timeline-excerpt">IBK Metatron 설치 및 구축 사업 개발 및 기획 진행 (Bigdata)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/65" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2018</p>
+                            <h2 class="timeline-title">삼성SDS</h2>
+                            <p class="timeline-excerpt">삼성 CONNECT WORKSPACE 구축사업 개발 및 UI 진행 (Cloud)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/64" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2018</p>
+                            <h2 class="timeline-title">LG전자</h2>
+                            <p class="timeline-excerpt">LG전자 VC CM</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/63" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2018</p>
+                            <h2 class="timeline-title">레노소프트</h2>
+                            <p class="timeline-excerpt">기업부설연구소 설립</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/62" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2018</p>
+                            <h2 class="timeline-title">레노소프트</h2>
+                            <p class="timeline-excerpt">벤처기업인증</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/61" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2018</p>
+                            <h2 class="timeline-title">바이널씨</h2>
+                            <p class="timeline-excerpt">국민카드 2018 운영</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/60" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2018</p>
+                            <h2 class="timeline-title">교원그룹</h2>
+                            <p class="timeline-excerpt">교원AI LMS 구축</p>
+                        </div>
+                    </div>
+                    <div id="2017" class="year timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/59" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2017</p>
+                            <h2 class="timeline-title">카카오</h2>
+                            <p class="timeline-excerpt">카카오 웹.앱 빌링시스템 검증 진행</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/58" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2017</p>
+                            <h2 class="timeline-title">삼성전자</h2>
+                            <p class="timeline-excerpt">삼성페이 디자인. 퍼블 구축 및 유지보수 (구축성 업무 전환)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/57" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2017</p>
+                            <h2 class="timeline-title">KT</h2>
+                            <p class="timeline-excerpt">K쇼핑 EMC 2.0 시스템 구축</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/56" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2017</p>
+                            <h2 class="timeline-title">KBS</h2>
+                            <p class="timeline-excerpt">KBS 디지털서비스 개발사업 품질검증</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/55" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2017</p>
+                            <h2 class="timeline-title">우리은행</h2>
+                            <p class="timeline-excerpt">우리은행 위비뱅크 대응개발 (UI부문)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/54" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2017</p>
+                            <h2 class="timeline-title">CJ올리브네트웍스</h2>
+                            <p class="timeline-excerpt">올리브영 온라인몰 구축 기획</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/53" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2017</p>
+                            <h2 class="timeline-title">한국재정정보원</h2>
+                            <p class="timeline-excerpt">한국재정정보원 디지털예산회계시스템 개선 및 고도화 사업 개발</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/52" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2017</p>
+                            <h2 class="timeline-title">국민은행</h2>
+                            <p class="timeline-excerpt">국민은행 상시 전담반 사업(스마트뱅킹 3차)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/51" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2017</p>
+                            <h2 class="timeline-title">삼성SDS</h2>
+                            <p class="timeline-excerpt">삼성 CONNECT WORKSPACE 구축사업 개발 및 UI 진행 (Cloud)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/50" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2017</p>
+                            <h2 class="timeline-title">IBK 기업은행</h2>
+                            <p class="timeline-excerpt">IBK Metatron 설치 및 구축 사업 개발 및 기획 진행 (Bigdata)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/49" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2017</p>
+                            <h2 class="timeline-title">디유넷</h2>
+                            <p class="timeline-excerpt">디유넷(동아일보 자회사) 학사관리 시스템(LMS) 구축 사업</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/48" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2017</p>
+                            <h2 class="timeline-title">SKT</h2>
+                            <p class="timeline-excerpt">SKT SDMI 구축 프로젝트 (Cloud)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/47" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2017</p>
+                            <h2 class="timeline-title">KBS</h2>
+                            <p class="timeline-excerpt">KBS 재난앱 구축 사업 품질검증</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/46" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2017</p>
+                            <h2 class="timeline-title">롯데카드</h2>
+                            <p class="timeline-excerpt">롯데카드 LP 차세대 구축 사업 (Cloud)</p>
+                        </div>
+                    </div>
+                    <div id="2016" class="year timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/45" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2016</p>
+                            <h2 class="timeline-title">카카오</h2>
+                            <p class="timeline-excerpt">카카오 웹.앱 빌링시스템 검증 진행</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/44" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2016</p>
+                            <h2 class="timeline-title">삼성전자</h2>
+                            <p class="timeline-excerpt">삼성페이 디자인. 퍼블 유지보수</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/43" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2016</p>
+                            <h2 class="timeline-title">카카오</h2>
+                            <p class="timeline-excerpt">카카오 1차 벤더 (20명 SQA Center 운영)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/42" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2016</p>
+                            <h2 class="timeline-title">풀무원</h2>
+                            <p class="timeline-excerpt">풀무원 이루미 시스템 고도화</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/41" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2016</p>
+                            <h2 class="timeline-title">농심</h2>
+                            <p class="timeline-excerpt">농심CCM 고도화 구축</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/40" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2016</p>
+                            <h2 class="timeline-title">Tmaxsoft</h2>
+                            <p class="timeline-excerpt">Tmaxsoft 미들웨어 부문 솔루션 구축 협력사</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/39" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2016</p>
+                            <h2 class="timeline-title">삼성전자</h2>
+                            <p class="timeline-excerpt">삼성전자 네트워크사업부 STMS 고도화 진행</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/38" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2016</p>
+                            <h2 class="timeline-title">이투스</h2>
+                            <p class="timeline-excerpt">이투스 학력평가원 문제출제은행 Web. Mobie 구축</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/37" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2016</p>
+                            <h2 class="timeline-title">이투스</h2>
+                            <p class="timeline-excerpt">이투스 학력평가원 Web.Mobile 신규사업 기획 운영</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/36" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2016</p>
+                            <h2 class="timeline-title">Infinilink</h2>
+                            <p class="timeline-excerpt">Infinilink – DB to DB 구축 연계 (유진기업)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/35" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2016</p>
+                            <h2 class="timeline-title">SK엔카</h2>
+                            <p class="timeline-excerpt">SK엔카 내부 경매 시스템 구축</p>
+                        </div>
+                    </div>
+                    <div id="2015" class="year timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/34" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2015</p>
+                            <h2 class="timeline-title">KBS</h2>
+                            <p class="timeline-excerpt">KBS 셋탑박스 / 컨텐츠 검증</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/33" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2015</p>
+                            <h2 class="timeline-title">카카오</h2>
+                            <p class="timeline-excerpt">카카오 결제 플랫폼&서비스 SQA</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/32" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2015</p>
+                            <h2 class="timeline-title">카카오</h2>
+                            <p class="timeline-excerpt">카카오 1차 벤더 (20명 SQA Center 확대 구축 운영)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/31" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2015</p>
+                            <h2 class="timeline-title">투쿨포스쿨</h2>
+                            <p class="timeline-excerpt">투쿨포스쿨 쇼핑몰 개선 구축</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/30" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2015</p>
+                            <h2 class="timeline-title">교육부</h2>
+                            <p class="timeline-excerpt">교육부 진로 멘토링 시스템 구축</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/29" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2015</p>
+                            <h2 class="timeline-title">농협</h2>
+                            <p class="timeline-excerpt">농협 교육정보시스템 및 e-러닝 구축</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/28" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2015</p>
+                            <h2 class="timeline-title">롯데</h2>
+                            <p class="timeline-excerpt">롯데월드 포인트 구축 시스템 구축</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/27" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2015</p>
+                            <h2 class="timeline-title">교육부</h2>
+                            <p class="timeline-excerpt">교육부 진로 멘토링 시스템 구축</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/26" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2015</p>
+                            <h2 class="timeline-title">LG전자</h2>
+                            <p class="timeline-excerpt">LG전자 단말 영상 플래이 플랫폼 구축</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/25" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2015</p>
+                            <h2 class="timeline-title">지오투정보기술</h2>
+                            <p class="timeline-excerpt">전라북도 UAV 공유지 관리 시스템 구축</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/24" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2015</p>
+                            <h2 class="timeline-title">새정치민주연합</h2>
+                            <p class="timeline-excerpt">새정치민주연합 네트워크 사이트 구축</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/23" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2015</p>
+                            <h2 class="timeline-title">삼성전자</h2>
+                            <p class="timeline-excerpt">삼성전자 시료관리 시스템 구축</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/22" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2015</p>
+                            <h2 class="timeline-title">삼성반도체</h2>
+                            <p class="timeline-excerpt">삼성반도체 환경안전 법규대안 구축</p>
+                        </div>
+                    </div>
+                    <div id="2014" class="year timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/21" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2014</p>
+                            <h2 class="timeline-title">투쿨포스쿨</h2>
+                            <p class="timeline-excerpt">투쿨포스쿨 웹&모바일 쇼핑목 구축</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/20" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2014</p>
+                            <h2 class="timeline-title">지오투정보기술</h2>
+                            <p class="timeline-excerpt">공간정보 오픈플랫폼 운영지원 시스템 개선</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/19" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2014</p>
+                            <h2 class="timeline-title">지오투정보기술</h2>
+                            <p class="timeline-excerpt">TMS스마트폰 앱 구축</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/18" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2014</p>
+                            <h2 class="timeline-title">지오투정보기술</h2>
+                            <p class="timeline-excerpt">강원도 스마트 상하수도 통합시스템 개발진행</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/17" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2014</p>
+                            <h2 class="timeline-title">경기C&M</h2>
+                            <p class="timeline-excerpt">경기C&M SQA</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/16" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2014</p>
+                            <h2 class="timeline-title">현대 HCN</h2>
+                            <p class="timeline-excerpt">HCN 셋탑박스 SQA</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/15" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2014</p>
+                            <h2 class="timeline-title">유비벨록스</h2>
+                            <p class="timeline-excerpt">유비벨록스 SK-Tstore SQA</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/14" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2014</p>
+                            <h2 class="timeline-title">카카오</h2>
+                            <p class="timeline-excerpt">카카오 결제 플랫폼&서비스 SQA</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/13" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2014</p>
+                            <h2 class="timeline-title">카카오</h2>
+                            <p class="timeline-excerpt">카카오 1차 벤더 (15명 SQA Center 구축 운영)</p>
+                        </div>
+                    </div>
+                    <div id="2013" class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/12" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2013</p>
+                            <h2 class="timeline-title">청호컴넷</h2>
+                            <p class="timeline-excerpt">청호컴넷 음식물처리기 출동관제 시스템 구축</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/11" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2013</p>
+                            <h2 class="timeline-title">포스코</h2>
+                            <p class="timeline-excerpt">포스코 대외 고객사 ERP 시스템 구축</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/10" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2013</p>
+                            <h2 class="timeline-title">라이나 생명</h2>
+                            <p class="timeline-excerpt">라이나 생명 홈페이지 리뉴얼</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/9" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2013</p>
+                            <h2 class="timeline-title">삼성카드</h2>
+                            <p class="timeline-excerpt">삼성카드 홈페이지 웨딩사이트 리뉴얼</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/8" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2013</p>
+                            <h2 class="timeline-title">국방부</h2>
+                            <p class="timeline-excerpt">국방부 기술품질연구원 내부 ERP 시스템 구축</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/7" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2013</p>
+                            <h2 class="timeline-title">농협</h2>
+                            <p class="timeline-excerpt">농협 프로프레임자바 페이퍼링 시스템 구축</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/6" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2013</p>
+                            <h2 class="timeline-title">테라온</h2>
+                            <p class="timeline-excerpt">테라온 시스템 모티터링 시스템 개발</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/5" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2013</p>
+                            <h2 class="timeline-title">테라온</h2>
+                            <p class="timeline-excerpt">테라온 시스템 모티터링 시스템 개발</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/4" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2013</p>
+                            <h2 class="timeline-title"> ㈜레노소프트 설립</h2>
+                            <p class="timeline-excerpt">㈜레노소프트 설립 (법인전환)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/3" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2013</p>
+                            <h2 class="timeline-title">삼성화재</h2>
+                            <p class="timeline-excerpt">삼성화재해상보험 Audatex 개발 구축</p>
+                        </div>
+                    </div>
+                    <div id="2012" class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/2" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2012</p>
+                            <h2 class="timeline-title">카카오</h2>
+                            <p class="timeline-excerpt">㈜카카오 웹.앱 검증</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item wow fadeInUp">
+                        <div class="timeline-photo">
+                            <img src="https://source.unsplash.com/featured/?computer,business/1" />
+                            <button class="timeline-cta">READ MORE</button>
+                        </div>
+                        <div class="timeline-headline">
+                            <p class="timeline-subtitle">2012</p>
+                            <h2 class="timeline-title">우정사업본부</h2>
+                            <p class="timeline-excerpt">우정사업본부 내부 ERP 시스템 구축 개발 진행</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="slider-control">
-                    <div class="prev"><button type="button">
-                            <ion-icon name="arrow-back"></ion-icon>
-                        </button></div>
-                    <div class="next"><button type="button">
-                            <ion-icon name="arrow-forward"></ion-icon>
-                        </button></div>
-                </div>
-
-                <div class="blocks">
-                    <div class="block-1"></div>
-                    <div class="block-2"></div>
-                    <div class="block-3"></div>
-                </div>
-
-                <div class="overlay"></div>
-
-                <div class="image-slider" onclick="modal('timeline')">
-                    <div class="image-slide" id="one"
-                        style="background: url(./images/works/welstory.jpg) no-repeat 50% 50%; background-size: cover;">
-                    </div>
-                    <div class="image-slide" id="two"
-                        style="background: url(./images/works/rsm.jpg) no-repeat 50% 50%; background-size: cover;">
-                    </div>
-                    <div class="image-slide" id="three"
-                        style="background: url(./images/works/welstory.jpg) no-repeat 50% 50%; background-size: cover;">
-                    </div>
-                    <div class="image-slide" id="four"
-                        style="background: url(./images/works/rsm.jpg) no-repeat 50% 50%; background-size: cover;">
-                    </div>
-                </div>
+                <div class="timeline-overlay"></div>
+                <button class="timeline-back">
+                    <svg viewBox="0 0 24 24">
+                        <path fill="none" stroke-width="2" d="M6,12.4 L18,12.4 M12.6,7 L18,12.4 L12.6,17.8"
+                            transform="matrix(-1 0 0 1 24 0)"></path>
+                    </svg>
+                </button>
             </div>
         </section>
-
-        <canvas class="js-canvas"></canvas>
     </div>
-    <!-- Modal -->
-    <div class="modal modal-timeline">
-        <iframe src="timeline.html" frameborder="0"></iframe>
-    </div><!-- end Modal -->
     <div class="modal-backdrop"></div>
+    <div class="loading">Loading&#8230;</div>
+    <div class="scroll-top">
+        <ion-icon name="arrow-up"></ion-icon>
+    </div>
 
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
-    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js'></script>
+    <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
     <script src="./js/TweenMax.min.js"></script>
     <script src="./js/slick.js"></script>
     <script src="./js/script.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <!-- <script src="./js/timeline.js"></script> -->
     <script>
         new WOW().init();
     </script>
 
     <script>
-        var image = document.getElementsByClassName('content');
-        new simpleParallax(image, {
-            scale: 1.6,
-            orientation: 'right'
-        });
-
-        TweenMax.from(".logo", 1.6, {
-            delay: .1,
-            opacity: 0,
-            y: 30,
-            ease: Expo.easeInOut
-        });
-        TweenMax.staggerFrom(".menu li", 2, {
-            delay: .2,
-            opacity: 0,
-            y: -20,
-            ease: Expo.easeInOut
-        }, .2);
-        TweenMax.from(".heading", 1.6, {
-            opacity: 0,
-            y: 0,
-            ease: Expo.easeInOut
-        });
-        TweenMax.from(".content", 1.6, {
-            delay: 1.5,
+        TweenMax.from(".title p", 1.6, {
+            delay: 1,
             opacity: 0,
             y: 30,
             ease: Expo.easeInOut
         });
     </script>
     <script>
-        var sickPrimary = {
-            autoplay: true,
-            autoplaySpeed: 2400,
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            speed: 1800,
-            cssEase: 'cubic-bezier(.84, 0, .08, .99)',
-            asNavFor: '.text-slider',
-            centerMode: true,
-            prevArrow: $('.prev'),
-            nextArrow: $('.next')
+        
+        if (navigator.userAgent.match(/(?:\b(MS)?IE\s+|\bTrident\/7\.0;.*\s+rv:|\bEdge\/)(\d+)/)) {
+            $('#year').css('color', 'rgba(255,255,255,.3)');
         }
+        $(document).ready(function () {
+            var worksHeight = $('.works').innerHeight();
 
-        var sickSecondary = {
-            autoplay: true,
-            autoplaySpeed: 2400,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            speed: 1800,
-            cssEase: 'cubic-bezier(.84, 0, .08, .99)',
-            asNavFor: '.image-slider',
-            prevArrow: $('.prev'),
-            nextArrow: $('.next')
-        }
+            $(window).scroll(function () {
+                let worksScroll = $(this).scrollTop();
 
-        var ua = window.navigator.userAgent;
-        var windowWidth = $(window).width();
-
-        if (windowWidth < 991 || /lgtelecom/i.test(ua) || /Android/i.test(ua) || /blackberry/i.test(ua) || /iPhone/i
-            .test(ua) || /ipad/i
-            .test(ua) || /samsung/i.test(ua) || /symbian/i.test(ua) || /sony/i.test(ua) || /SCH-/i.test(ua) || /SPH-/i
-            .test(ua)) {
-            var sickPrimary = {
-                autoplay: true,
-                autoplaySpeed: 2400,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false,
-                speed: 1800,
-                cssEase: 'cubic-bezier(.84, 0, .08, .99)',
-                asNavFor: '.text-slider'
-            }
-        }
-
-        $('.image-slider').slick(sickPrimary);
-        $('.text-slider').slick(sickSecondary);
+                if (worksScroll >= $('#2019').offset().top) {
+                    $('.works').css('background', '#233342');
+                    $('#year').html("2019");
+                    $('.sub-menu .2019').addClass('active')
+                }
+                if (worksScroll >= $('#2018').offset().top) {
+                    $('.works').css('background', '#2C4F71');
+                    $('#year').html("2018");
+                }
+                if (worksScroll >= $('#2017').offset().top) {
+                    $('.works').css('background', '#6F3637');
+                    $('#year').html("2017");
+                }
+                if (worksScroll >= $('#2016').offset().top) {
+                    $('.works').css('background', '#072A24');
+                    $('#year').html("2016");
+                }
+                if (worksScroll >= $('#2015').offset().top) {
+                    $('.works').css('background', '#4B2B31');
+                    $('#year').html("2015");
+                }
+                if (worksScroll >= $('#2014').offset().top) {
+                    $('.works').css('background', '#A46843');
+                    $('#year').html("2014");
+                }
+                if (worksScroll >= $('#2013').offset().top) {
+                    $('.works').css('background', '#A67F78');
+                    $('#year').html("2013");
+                }
+                if (worksScroll >= $('#2012').offset().top) {
+                    $('.works').css('background', '#8F8681');
+                    $('#year').html("2012");
+                }
+            });
+        });
     </script>
 </body>
 

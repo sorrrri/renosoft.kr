@@ -1,64 +1,48 @@
 
-.main { height: 100vh; display:flex; justify-content: center; align-items: center; } 
-.main .heading { z-index:0; color:white; opacity:.6 !important; font-family:'Questrial'; margin:0 !important; font-size:15vw !important; } 
-.main .content { white-space: nowrap; font-size:24; font-weight:600; text-align:center; position:absolute; top:50%; left:50%; transform: translate(-50%, -50%) !important; margin:0 !important } 
-/* .main .content:after { content: ''; top: 0; left: 0; width: 0%; height: 100%; background: #f5af19; position: absolute; animation: rev-text 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards; animation-delay:.2s } */
+.intro .content { white-space: nowrap; } 
 
-.about { margin-bottom:5rem; background:#343a42; margin-left:10%; color:white } 
-.about .heading { color:#f5af19; } 
-.about .parallax-logo { left:-10%; position: absolute; top:25%; } 
-.about .parallax-logo img { opacity: .1; animation: moveUpDown 1s infinite alternate } 
+.heading { white-space: nowrap; } 
+/* .heading span:after { content: ''; top: 0; left: 0; width: 0%; height: 100%; background: #f5af19; position: absolute; animation: rev-text 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards; animation-delay:.2s } */
+.heading { font-size: 8vh; } 
+
+
+.about { margin-top:5rem } 
+
+.about .parallax-logo { right:30%; position: absolute; top:20%; } 
+.about .parallax-logo img { opacity: .6; animation: moveUpDown 1s infinite alternate } 
 
 .about .content { display:flex; } 
-.about .title { flex: 0 0 50%; } 
-.about .title p { word-break:keep-all } 
-.about .ci { position: absolute; bottom: -30rem; right:-5rem;  background-position:top 5rem left 5rem; margin-bottom:-10rem; background-color:white; color:#343a42; background-size:30%; width:40%; margin-top:9rem; padding: 10rem 5rem 5rem } 
+.about .content div:first-of-type { flex: 0 0 45%; } 
+.about .content div:first-of-type p { word-break:keep-all } 
+.about .ci { box-sizing:border-box; height:fit-content; margin-right:5rem; background-position:top 3rem left 2rem; background-color:white; color:#343a42; background-size:40%; width:40%; padding: 7rem 2rem 2rem } 
 
-.works { margin-bottom:5rem; height:100vh; display:flex; align-items: center; } 
-.works .heading { white-space: nowrap; } 
-.works .content { height: 70%; width:100%; margin-left: -3rem; cursor: pointer; } 
-.works .modal-timeline { max-width: 760px; } 
-.works .overlay { z-index: 1; position: absolute; height: 100%; width:100%; background: rgba(0, 0, 0, .36); } 
+.works section { display:flex; flex-direction: row-reverse; } 
+.works .title { width:30%; position: fixed; top:10rem; left:10rem; overflow: hidden; } 
 
-.works .cards { z-index:10; position: absolute; right: -20rem; bottom:7rem; display: flex; } 
-.works .card { background: white; margin-right:1rem; border-radius: .5rem; overflow:hidden } 
+.works .content { width:60%; } 
+.works .timeline.is-expanded { position: fixed; left: 0; top: 0; } 
 
-.works .card .img { width:22rem; height:10rem; overflow:hidden } 
-.works .card .img img { width:100%; transition: transform 6s ease-in-out } 
-.works .card:hover .img img { transform:scale(1.5) } 
-.works .card ul { padding: 2rem;}
-.works .card .name {font-weight:bold; margin-bottom: 1rem;}
-.works .card .info {font-size:16px}
-.works .card .date {font-size:16px; font-family:"Poppins"; color:#939699}
+.works-details {padding: 5rem 10rem; }
+.works-details .heading { font-size:6vh; margin-bottom:1rem}
+.works-details .slider { height:500px; }
 
-.clients { margin-bottom: 10rem; background-color: rgba(255,255,255,.6); background-image: url(https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-blend-mode: screen; } 
-.clients h1 { text-align:center } 
-.clients .slick-slider { margin-bottom: -10rem; } 
- 
+.works-details .slick-slide {height:450px}
+
+.clients h1, .clients h2 { text-align:center } 
+h2 { font-size:17px; margin-bottom: 2rem; } 
 .contact { z-index: 3; } 
 .contact iframe { height:600px } 
 
 
-footer { margin-top:-18rem; padding: 18rem 12rem 8rem; display: flex; justify-content: space-between; } 
-footer div:first-of-type { margin-right:2rem } 
 
+@media screen and (max-width:1400px) { 
+    .works .title { top:5rem; left:5rem;  } 
+    section { padding: 5rem; } 
+}
 
-@media(max-width: 990px){
- .works .image-slider { width:100% } 
- .works .text-slide { color: black } 
- .works .slider-control { display:none } 
- .works .slick-slide.slick-center { transform: scale(1); } 
- .works .blocks, .overlay { display: none; } 
-
- .works .slide-slick { display: none !important; } 
- .works .text-slide h1 { font-size: 30px !important; } 
- .works .text-slider-wrapper { position: absolute; top: 50% !important; } 
- .works .modal-timeline { height: 80vh; width: 90vw; min-width: auto; } 
- 
- .works .timeline-item { height:30vh; width:40% } 
- 
- .contact { margin-bottom: 5rem; } 
- .contact iframe { height:40vh } 
- .contact .information { display:none } 
- }
-
+@media screen and (max-width:1000px) { 
+    section {flex-direction: column !important;}
+    section > * {width:100% !important}
+    .works .title { position:relative; top:auto; left:auto; margin-bottom:3rem } 
+    section { padding: 5rem; } 
+}

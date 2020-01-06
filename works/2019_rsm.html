@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>renosoft - our works</title>
+    <link rel="shortcut icon" href="images/renosoft.ico">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/style_content.css" media="screen and (min-width:490px)">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+</head>
+
+<body>
+    <div class="wrapper works-details">
+        <aside>
+            <ion-icon name="close" class="close"></ion-icon>
+            <ul>
+                <li><a href="/index.html"><span>Home</span></a></li>
+                <li><a href="/about.html"><span>About</span></a></li>
+                <li><a href="/works.html"><span>Works</span></a></li>
+                <li><a href="/contact.html"><span>Contact</span></a></li>
+            </ul>
+        </aside>
+        <header>
+            <div class="logo">
+                <a href="index.html">renosoft</a>
+            </div>
+            <nav>
+                <ul class="menu active">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ion-icon name="menu" class="i-menu"></ion-icon>
+            </nav>
+        </header>
+
+        <article>
+            <h1 class="heading">르노삼성 챗봇 개발</h1>
+            <div class="content">
+                <div class="table">
+                    <div class="row">
+                        <div>프로젝트</div>
+                        <div>르노삼성 챗봇 개발</div>
+                    </div>
+                    <div class="row">
+                        <div>개요</div>
+                        <div>
+                            <p>르노삼성자동차 엔젤센터(르노삼성 VOC 전담조직)와 마케팅 부서의 전통적(대면-유선포함) B2C대응의 문제점을 개선하고 효과적인 서비스 제공을 재고하기 위해
+                                자동화 고객대응 및
+                                마케팅 채널로의 챗봇 시스템 구축 사업을 진행하였습니다.</p>
+
+                            <p>채팅봇을 통해 24시간 실시간 고객응대 및 인터렉티브(Interactive)한 마케팅을 고려하기 위해 기획된 사업으로 고객의 사용자 편의성을 증대 및 과도한
+                                업무 절감을 목적으로
+                                기획, 디자인, 개발요소 모든 부분에 간소함과 효율성을 중점으로 작업이 진행됐습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>개발환경</div>
+                        <div>Language / DBMS / Tool / OS</div>
+                    </div>
+                    <div class="row">
+                        <div>부문</div>
+                        <div>Website / Mobile App&Web (Plan / Design / Publishing / Dev)</div>
+                    </div>
+                    <div class="row">
+                        <div>고객</div>
+                        <div>르노삼성자동차</div>
+                    </div>
+                    <div class="row">
+                        <div>사업기간</div>
+                        <div>2019.01~2019.04 (Open : 2019.04.12)</div>
+                    </div>
+                    <div class="row">
+                        <div>URL</div>
+                        <div>https://alphabot-chat......</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider wow fadeInUp">
+                <div>
+                    <img src="/images/works/rsm.jpg">
+                </div>
+                <div>
+                    <img src="/images/works/welstory.jpg">
+                </div>
+            </div>
+        </article>
+        <button class="arrow" onclick="history.back()">
+            <ion-icon name="arrow-back"></ion-icon>뒤로가기
+        </button>
+    </div>
+    <div class="modal-backdrop"></div>
+    <div class="loading">Loading&#8230;</div>
+    <div class="scroll-top">
+        <ion-icon name="arrow-up"></ion-icon>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js'></script>
+    <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+    <script src="/js/TweenMax.min.js"></script>
+    <script src="/js/slick.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <!-- <script src="./js/timeline.js"></script> -->
+    <script>
+        new WOW().init();
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            autoplay: true,
+            speed: 200,
+            slidesToShow: 1,
+            adaptiveHeight: true
+        });
+    </script>
+
+    <script>
+        TweenMax.from(".logo", 1.6, {
+            delay: .1,
+            opacity: 0,
+            y: 30,
+            ease: Expo.easeInOut
+        });
+        TweenMax.staggerFrom(".menu li", 2, {
+            delay: .2,
+            opacity: 0,
+            y: -20,
+            ease: Expo.easeInOut
+        }, .2);
+        TweenMax.from(".heading", 1.6, {
+            delay: .8,
+            opacity: 0,
+            y: 30,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".title p", 1.6, {
+            delay: 1,
+            opacity: 0,
+            y: 30,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".content", 1.6, {
+            delay: 1.5,
+            opacity: 0,
+            y: 30,
+            ease: Expo.easeInOut
+        });
+    </script>
+</body>
+
+</html>
