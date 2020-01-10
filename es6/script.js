@@ -10,8 +10,16 @@ if (navigator.userAgent.match(/(?:\b(MS)?IE\s+|\bTrident\/7\.0;.*\s+rv:|\bEdge\/
 	});
 }
 
-// menu
+// Menus
 $(document).ready(function () {
+	$('.menu-about').on('click', function () {
+		$('.block-menu').addClass('active');
+	});
+	$('.close').on('click', function () {
+		ssssa
+		$('.block-menu').removeClass('active');
+	});
+
 	$(window).scroll(function () {
 		let currentScroll = $(this).scrollTop();
 		if (currentScroll > 100) {
@@ -24,13 +32,18 @@ $(document).ready(function () {
 			$('.toggle-menu').addClass('hidden');
 			$('header .menu').addClass('active');
 		}
+
+
+		let ypos = window.pageYOffset;
+		$('.intro').css("opacity", "1" + -ypos * .2);
+		$('.intro .menu').css("transform", "translateY(" + ypos * -.5 + "px)");
+
 	});
 
 	$('a[href^="#"]').click(function () {
-		let target = this.hash,
-			$target = $(target).offset().top;
+		let target = this.hash;
 		//console.log(target, $target);
-		$('html, body').animate({ 'scrollTop': $target }), 1500;
+		$('html, body').animate({ 'scrollTop': $(target).offset().top }), 1500;
 	});
 });
 
@@ -60,8 +73,7 @@ $(".close, aside a").on("click", function () {
 });
 
 $('.toggle-menu').click(function () {
-	$(".modal-backdrop").addClass("active");
-	$('aside').addClass('active');
+	$(".modal-backdrop, aside").addClass("active");
 	$('.close').css("transform", "rotate(180deg)");
 	$('.close').css("transition", ".6s");
 });

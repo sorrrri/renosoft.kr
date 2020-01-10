@@ -1,12 +1,8 @@
 
 .intro .content { white-space: nowrap; } 
 
+.title { margin:5rem 0 2rem } 
 .heading { white-space: nowrap; } 
-/* .heading span:after { content: ''; top: 0; left: 0; width: 0%; height: 100%; background: #f5af19; position: absolute; animation: rev-text 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards; animation-delay:.2s } */
-.heading { font-size: 8vh; } 
-
-
-.about { margin-top:5rem } 
 
 .about .parallax-logo { right:30%; position: absolute; top:20%; } 
 .about .parallax-logo img { opacity: .6; animation: moveUpDown 1s infinite alternate } 
@@ -14,7 +10,10 @@
 .about .content { display:flex; } 
 .about .content div:first-of-type { flex: 0 0 45%; } 
 .about .content div:first-of-type p { word-break:keep-all } 
-.about .ci { box-sizing:border-box; height:fit-content; margin-right:5rem; background-position:top 3rem left 2rem; background-color:white; color:#343a42; background-size:40%; width:40%; padding: 7rem 2rem 2rem } 
+
+/* CI Intro */
+.about.ci { margin-top:0 } 
+.about .img-ci { padding: 8rem 3rem; } 
 
 .works section { display:flex; flex-direction: row-reverse; } 
 .works .title { width:30%; position: fixed; top:10rem; left:10rem; overflow: hidden; } 
@@ -22,11 +21,6 @@
 .works .content { width:60%; } 
 .works .timeline.is-expanded { position: fixed; left: 0; top: 0; } 
 
-.works-details {padding: 5rem 10rem; }
-.works-details .heading { font-size:6vh; margin-bottom:1rem}
-.works-details .slider { height:500px; }
-
-.works-details .slick-slide {height:450px}
 
 .clients h1, .clients h2 { text-align:center } 
 h2 { font-size:17px; margin-bottom: 2rem; } 
@@ -35,14 +29,13 @@ h2 { font-size:17px; margin-bottom: 2rem; }
 
 
 
-@media screen and (max-width:1400px) { 
-    .works .title { top:5rem; left:5rem;  } 
-    section { padding: 5rem; } 
-}
+@media screen and (max-width:1400px){
+ .works .title { top:5rem; left:5rem; } 
+ section { padding: 5rem; } 
+ }
 
-@media screen and (max-width:1000px) { 
-    section {flex-direction: column !important;}
-    section > * {width:100% !important}
-    .works .title { position:relative; top:auto; left:auto; margin-bottom:3rem } 
-    section { padding: 5rem; } 
-}
+@media screen and (max-width:1000px) { section { flex-direction: column !important; } 
+ section > * { width:100% !important } 
+ .works .title { position:relative; top:auto; left:auto; margin-bottom:3rem } 
+ section { padding: 5rem; } 
+ }

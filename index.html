@@ -8,10 +8,10 @@
     <meta name="keywords" content="renosoft, 레노소프트">
     <meta name="description" content="레노소프트 홈페이지입니다.">
     <title>renosoft - main</title>
-    <link rel="shortcut icon" href="images/renosoft.ico">
+    <link rel="shortcut icon" href="/images/renosoft.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="/css/common.css?ver=2">
+    <link rel="stylesheet" href="/css/animate.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
@@ -40,39 +40,49 @@
             <ion-icon name="close" class="close"></ion-icon>
             <ul>
                 <li>
-                    <span></span>
-                    <p>biz area</p>
+                    <a href="/about.html#item-biz">
+                        <span></span>
+                        <p>biz area</p>
+                    </a>
                 </li>
                 <li>
-                    <span></span>
-                    <p>ci intro</p>
+                    <a href="/about.html#item-ci">
+                        <span></span>
+                        <p>ci intro</p>
+                    </a>
                 </li>
                 <li>
-                    <span></span>
-                    <p>crew</p>
+                    <a href="/about.html#item-crew">
+                        <span></span>
+                        <p>crew</p>
+                    </a>
                 </li>
                 <li>
-                    <span></span>
-                    <p>culture</p>
+                    <a href="/about.html#item-culture">
+                        <span></span>
+                        <p>culture</p>
+                    </a>
                 </li>
                 <li>
-                    <span></span>
-                    <p>clients</p>
+                    <a href="/about.html#item-clients">
+                        <span></span>
+                        <p>clients</p>
+                    </a>
                 </li>
             </ul>
         </div>
         <aside>
             <ion-icon name="close" class="close"></ion-icon>
             <ul>
-                <li class="menu-home"><a href="index.html"><span>Home</span></a></li>
+                <li class="menu-home"><a href="/index.html"><span>Home</span></a></li>
                 <li class="menu-about"><a href="#"><span>About</span></a></li>
-                <li class="menu-works"><a href="works.html"><span>Works</span></a></li>
-                <li class="menu-contact"><a href="contact.html"><span>Contact</span></a></li>
+                <li class="menu-works"><a href="/works.html"><span>Works</span></a></li>
+                <li class="menu-contact"><a href="/contact.html"><span>Contact</span></a></li>
             </ul>
         </aside>
         <header>
             <div class="logo">
-                <a href="index.html">renosoft</a>
+                <a href="/index.html">renosoft</a>
             </div>
             <nav>
                 <ul class="toggle-menu">
@@ -83,25 +93,27 @@
                 <!-- <ion-icon name="menu" class="i-menu"></ion-icon> -->
             </nav>
         </header>
-        <section class="intro">
+        <section class="intro" data-0="background-position:0% 0%"
+            data-top-bottom="background-position:0% 100%; opacity:0">
             <nav>
                 <ul class="menu active">
-                    <li class="menu-home"><a href="index.html">Home</a></li>
+                    <li class="menu-home"><a href="/about/">Home</a></li>
                     <li class="menu-about">About</li>
-                    <li class="menu-works"><a href="works.html">Works</a></li>
-                    <li class="menu-contact"><a href="contact.html">Contact</a></li>
+                    <li class="menu-works"><a href="/works.html">Works</a></li>
+                    <li class="menu-contact"><a href="/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </section>
 
-        <section class="clients">
+        <section class="clients" data-center="background-color:rgb(232,233,234)"
+            data-top-bottom="background-color:rgb(35,51,66)">
             <div class="title">
                 <h1 class="wow slideInLeft">Our Clients</h1>
                 <p class="wow fadeInUp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>Inventore
                     repudiandae
                     beatae iste minus repellendus consequatur omnis.</p>
             </div>
-            <div class="responsive wow fadeIn">
+            <div class="responsive wow fadeIn" data-bottom="opacity:1" data-top-bottom="opacity:0">
                 <div>
                     <img src="./images/clients/kakao.png" />
                 </div>
@@ -129,7 +141,7 @@
                 <p class="wow fadeInUp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>Inventore
                     repudiandae
                     beatae iste minus repellendus consequatur omnis.</p>
-                    <button class="wow fadeInUp" data-wow-delay=".2s">더보기</button>
+                <button class="wow fadeInUp" data-wow-delay=".2s" onclick="location.href='works.html'">더보기</button>
             </div>
             <div class="timeline">
                 <div id="2019" class="year timeline-item wow fadeInUp">
@@ -251,15 +263,24 @@
         <div class="modal-backdrop"></div>
     </div>
     <div class="loading">Loading&#8230;</div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <!-- <script src="./js/jquery-3.4.1.min.js"></script> -->
     <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
     <script src="./js/wow.min.js"></script>
+    <script src="./js/skrollr.min.js"></script>
     <script src="./js/slick.js"></script>
     <script src="./js/script.js"></script>
     <script>
         new WOW().init();
+        skrollr.init({
+            forceHeight: false,
+        });
+        var _skrollr = skrollr.get(); // get() returns the skrollr instance or undefined
+        var windowWidth = $(window).width();
+
+        if (windowWidth <= 640 && _skrollr !== undefined) {
+            _skrollr.destroy();
+        }
     </script>
     <script>
         $('.responsive').slick({
@@ -298,8 +319,6 @@
     </script>
     <script>
         $(document).ready(function () {
-
-            var mainHeight = $('.main').innerHeight();
             $(window).scroll(function () {
                 let currentScroll = $(this).scrollTop();
 
@@ -307,29 +326,20 @@
                     $('.logo a, .media a').css('color', '#333');
                     $('.toggle-menu li').css('background-color', '#333');
                 }
+                if (currentScroll > $('.works').offset().top) {
+                    $('.logo a, .media a').css('color', 'white');
+                    $('.toggle-menu li').css('background-color', 'white');
+                }
                 if (currentScroll < $('.clients').offset().top) {
                     $('.logo a, .media a').css('color', 'white');
                     $('.toggle-menu li').css('background-color', 'white');
                 }
-
-
-                if (currentScroll > 100) {
-                    $('.toggle-menu, .scroll-top').addClass('active');
-                    $('.toggle-menu').removeClass('hidden');
-                    $('header .menu').removeClass('active');
-                } else {
-                    $('.toggle-menu, .scroll-top').removeClass('active');
-                    $('.toggle-menu').addClass('hidden');
-                    $('header .menu').addClass('active');
+                if (currentScroll > $('.contact').offset().top) {
+                    $('.logo a, .media a').css('color', '#333');
+                    $('.toggle-menu li').css('background-color', '#333');
                 }
             });
 
-            $('.menu-about').on('click', function () {
-                $('.block-menu').addClass('active');
-            });
-            $('.close').on('click', function () {
-                $('.block-menu').removeClass('active');
-            });
         });
     </script>
 </body>

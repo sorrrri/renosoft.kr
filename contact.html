@@ -8,34 +8,60 @@
     <title>renosoft - contact us</title>
     <link rel="shortcut icon" href="images/renosoft.ico">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/style_content.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="css/style_content.css" media="screen and (min-width:490px)">
 </head>
 
 <body>
     <div class="wrapper contact">
+        <div class="block-menu">
+            <ion-icon name="close" class="close"></ion-icon>
+            <ul>
+                <li>
+                    <a href="#">
+                        <span></span>
+                        <p>biz area</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="about/ci.html">
+                        <span></span>
+                        <p>ci intro</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span></span>
+                        <p>crew</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span></span>
+                        <p>culture</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span></span>
+                        <p>clients</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
         <aside>
             <ion-icon name="close" class="close"></ion-icon>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="works.html">Works</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="menu-home"><a href="/index.html"><span>Home</span></a></li>
+                <li class="menu-about"><a href="#"><span>About</span></a></li>
+                <li class="menu-works"><a href="/works.html"><span>Works</span></a></li>
+                <li class="menu-contact"><a href="/contact.html"><span>Contact</span></a></li>
             </ul>
         </aside>
         <header>
             <div class="logo">
-                <a href="index.html">renosozft</a>
+                <a href="/index.html">renosoft</a>
             </div>
             <nav>
-                <ul class="menu active">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="works.html">Works</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
                 <ul class="toggle-menu">
                     <li></li>
                     <li></li>
@@ -44,16 +70,7 @@
                 <!-- <ion-icon name="menu" class="i-menu"></ion-icon> -->
             </nav>
         </header>
-
-        <div class="grid">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
         <section>
-
             <div class="title">
                 <h1 class="heading">Contact Us</h1>
             </div>
@@ -86,52 +103,33 @@
                 </div>
             </div>
         </section>
-        <canvas class="js-canvas"></canvas>
+        <footer class="wow fadeInUp">
+            <div class="wow fadeInUp" data-wow-delay=".4s">
+                <small>채용, 대외홍보, 사업 문의</small>
+                <ul>
+                    <li><a href="mailto:renosoft@renosoft.kr">renosoft@renosoft.kr</a></li>
+                    <li>전화 : 031-751-4234 </li>
+                    <li>팩스 : 031-751-4235</li>
+                    <li>담당자 : 안덕곤 (010-2677-4234)</li>
+                </ul>
+            </div>
+            <div class="wow fadeInUp" data-wow-delay=".6s">
+                <small>주소</small>
+                <ul>
+                    <li>경기도 성남시 수정구 창업로 42 (제2판교테크노밸리) 경기기업성장센터 615호</li>
+                </ul>
+                <small>찾아오는길</small>
+                <ul>
+                    <li>신분당선 – 판교역 2번출구 >> 도보3분 >> 판교역버스정류장 55번 버스 >> 8분>> (종점)제2판교테크노밸리 경기기업성장센터</li>
+                </ul>
+            </div>
+        </footer>
         <div class="modal-backdrop"></div>
     </div>
 
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <script src="./js/jquery-3.4.1.min.js"></script>
-    <script src="./js/TweenMax.min.js"></script>
-    <script src="./js/slick.js"></script>
     <script src="./js/script.js"></script>
-    <script>
-        TweenMax.from(".logo", 1.6, {
-            delay: .4,
-            opacity: 0,
-            y: 30,
-            ease: Expo.easeInOut
-        });
-        TweenMax.staggerFrom(".menu li", 2, {
-            delay: .5,
-            opacity: 0,
-            y: -20,
-            ease: Expo.easeInOut
-        }, .2);
-        TweenMax.from(".heading", 1.6, {
-            opacity: 0,
-            y: 0,
-            ease: Expo.easeInOut
-        });
-        TweenMax.from(".content", 1.6, {
-            delay: 1.5,
-            opacity: 0,
-            x: -30,
-            ease: Expo.easeInOut
-        });
-        TweenMax.from(".information", 1.6, {
-            delay: 2,
-            opacity: 0,
-            x: 30,
-            ease: Expo.easeInOut
-        });
-        TweenMax.staggerFrom(".information div", 1.6, {
-            delay: 2.2,
-            opacity: 0,
-            y: 20,
-            ease: Expo.easeInOut
-        }, .4);
-    </script>
 </body>
 
 </html>
