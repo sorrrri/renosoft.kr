@@ -40,31 +40,31 @@
             <ion-icon name="close" class="close"></ion-icon>
             <ul>
                 <li>
-                    <a href="/about.html#item-biz">
+                    <a href="/about/biz_area.html">
                         <span></span>
                         <p>biz area</p>
                     </a>
                 </li>
                 <li>
-                    <a href="/about.html#item-ci">
+                    <a href="/about/ci.html">
                         <span></span>
                         <p>ci intro</p>
                     </a>
                 </li>
                 <li>
-                    <a href="/about.html#item-crew">
+                    <a href="/about/crew.html">
                         <span></span>
                         <p>crew</p>
                     </a>
                 </li>
                 <li>
-                    <a href="/about.html#item-culture">
+                    <a href="/about/culture.html">
                         <span></span>
                         <p>culture</p>
                     </a>
                 </li>
                 <li>
-                    <a href="/about.html#item-clients">
+                    <a href="/about/clients.html">
                         <span></span>
                         <p>clients</p>
                     </a>
@@ -93,44 +93,32 @@
                 <!-- <ion-icon name="menu" class="i-menu"></ion-icon> -->
             </nav>
         </header>
-        <section class="intro" data-0="background-position:0% 0%"
-            data-top-bottom="background-position:0% 100%; opacity:0">
+
+        <section class="intro">
+            <div class="bg">
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+            </div>
+            <div class="logo-big">
+                <span>ren</span>
+                <span>oso</span>
+                <span>ft</span>
+            </div>
             <nav>
                 <ul class="menu active">
-                    <li class="menu-home"><a href="/about/">Home</a></li>
-                    <li class="menu-about">About</li>
-                    <li class="menu-works"><a href="/works.html">Works</a></li>
-                    <li class="menu-contact"><a href="/contact.html">Contact</a></li>
+                    <li class="menu-home"><a href="/index.html" data-hover-text="Home"><span>Home</span></a></li>
+                    <li class="menu-about"><a href="/about/" data-hover-text="About"><span>About</span></a></li>
+                    <li class="menu-works"><a href="/works.html" data-hover-text="Works"><span>Works</span></a></li>
+                    <li class="menu-contact"><a href="/contact.html" data-hover-text="Contact"><span>Contact</span></a>
+                    </li>
                 </ul>
             </nav>
-        </section>
-
-        <section class="clients" data-center="background-color:rgb(232,233,234)"
-            data-top-bottom="background-color:rgb(35,51,66)">
-            <div class="title">
-                <h1 class="wow slideInLeft">Our Clients</h1>
-                <p class="wow fadeInUp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>Inventore
-                    repudiandae
-                    beatae iste minus repellendus consequatur omnis.</p>
-            </div>
-            <div class="responsive wow fadeIn" data-bottom="opacity:1" data-top-bottom="opacity:0">
-                <div>
-                    <img src="./images/clients/kakao.png" />
-                </div>
-                <div>
-                    <img src="./images/clients/lina.png" />
-                </div>
-                <div>
-                    <img src="./images/clients/mnd.png" />
-                </div>
-                <div>
-                    <img src="./images/clients/nh.png" />
-                </div>
-                <div>
-                    <img src="./images/clients/posco.png" />
-                </div>
-                <div>
-                    <img src="./images/clients/post.png" />
+            <div class="scroll-downs">
+                <div class="mousey">
+                    <div class="scroller"></div>
                 </div>
             </div>
         </section>
@@ -220,6 +208,35 @@
             </div>
         </section>
 
+        <section class="clients">
+            <div class="title">
+                <h1 class="wow slideInLeft">Our Clients</h1>
+                <p class="wow fadeInUp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>Inventore
+                    repudiandae
+                    beatae iste minus repellendus consequatur omnis.</p>
+            </div>
+            <div class="responsive wow fadeIn" data-bottom="opacity:1" data-top-bottom="opacity:0">
+                <div>
+                    <img src="./images/clients/kakao.png" />
+                </div>
+                <div>
+                    <img src="./images/clients/lina.png" />
+                </div>
+                <div>
+                    <img src="./images/clients/mnd.png" />
+                </div>
+                <div>
+                    <img src="./images/clients/nh.png" />
+                </div>
+                <div>
+                    <img src="./images/clients/posco.png" />
+                </div>
+                <div>
+                    <img src="./images/clients/post.png" />
+                </div>
+            </div>
+        </section>
+
         <section class="contact">
             <div class="title">
                 <h1 class="wow slideInLeft">Contact Us</h1>
@@ -235,24 +252,35 @@
 
         </section>
         <footer class="wow fadeInUp">
-            <div class="wow fadeInUp" data-wow-delay=".4s">
-                <small>채용, 대외홍보, 사업 문의</small>
-                <ul>
-                    <li><a href="mailto:renosoft@renosoft.kr">renosoft@renosoft.kr</a></li>
-                    <li>전화 : 031-751-4234 </li>
-                    <li>팩스 : 031-751-4235</li>
-                    <li>담당자 : 안덕곤 (010-2677-4234)</li>
-                </ul>
+            <div class="container">
+                <div class="wow fadeInUp" data-wow-delay=".4s">
+                    <small>채용, 대외홍보, 사업 문의</small>
+                    <ul>
+                        <li><a href="mailto:renosoft@renosoft.kr">renosoft@renosoft.kr</a></li>
+                        <li>전화 : 031-751-4234 </li>
+                        <li>팩스 : 031-751-4235</li>
+                        <li>담당자 : 안덕곤 (010-2677-4234)</li>
+                    </ul>
+                </div>
+                <div class="wow fadeInUp" data-wow-delay=".6s">
+                    <small>주소</small>
+                    <ul>
+                        <li>경기도 성남시 수정구 창업로 42 (제2판교테크노밸리) 경기기업성장센터 615호</li>
+                    </ul>
+                    <small>찾아오는길</small>
+                    <ul>
+                        <li>신분당선 – 판교역 2번출구 >> 도보3분 >> 판교역버스정류장 55번 버스 >> 8분>> (종점)제2판교테크노밸리 경기기업성장센터</li>
+                    </ul>
+                </div>
             </div>
-            <div class="wow fadeInUp" data-wow-delay=".6s">
-                <small>주소</small>
-                <ul>
-                    <li>경기도 성남시 수정구 창업로 42 (제2판교테크노밸리) 경기기업성장센터 615호</li>
-                </ul>
-                <small>찾아오는길</small>
-                <ul>
-                    <li>신분당선 – 판교역 2번출구 >> 도보3분 >> 판교역버스정류장 55번 버스 >> 8분>> (종점)제2판교테크노밸리 경기기업성장센터</li>
-                </ul>
+            <div class="container">
+                <div class="sns">
+                    <small>SNS</small>
+                    <a href="http://www.instagram.com/renosoft" target="_blank">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </div>
+                <div class="copy">renosoft 2020</div>
             </div>
         </footer>
 
@@ -281,6 +309,17 @@
         if (windowWidth <= 640 && _skrollr !== undefined) {
             _skrollr.destroy();
         }
+
+        $(".menu").on("mouseenter", function () {
+            $(".segment").addClass("straighten");
+
+        })
+
+        $(".menu").on("mouseleave", function () {
+
+            $(".segment").removeClass("straighten");
+
+        })
     </script>
     <script>
         $('.responsive').slick({
@@ -320,24 +359,18 @@
     <script>
         $(document).ready(function () {
             $(window).scroll(function () {
-                let currentScroll = $(this).scrollTop();
+                var mainScroll = $(this).scrollTop(),
+                    $logo = $('.logo a'),
+                    $toggleMenu = $('.toggle-menu li');
 
-                if (currentScroll > $('.clients').offset().top) {
-                    $('.logo a, .media a').css('color', '#333');
-                    $('.toggle-menu li').css('background-color', '#333');
-                }
-                if (currentScroll > $('.works').offset().top) {
-                    $('.logo a, .media a').css('color', 'white');
-                    $('.toggle-menu li').css('background-color', 'white');
-                }
-                if (currentScroll < $('.clients').offset().top) {
-                    $('.logo a, .media a').css('color', 'white');
-                    $('.toggle-menu li').css('background-color', 'white');
-                }
-                if (currentScroll > $('.contact').offset().top) {
-                    $('.logo a, .media a').css('color', '#333');
-                    $('.toggle-menu li').css('background-color', '#333');
-                }
+                if (mainScroll > $('.works').offset().top) {
+                    $logo.css('color', 'white');
+                    $toggleMenu.css('background-color', 'white');
+                };
+                if (mainScroll > $('.clients, .contact').offset().top) {
+                    $logo.css('color', '#333');
+                    $toggleMenu.css('background-color', '#333');
+                };
             });
 
         });

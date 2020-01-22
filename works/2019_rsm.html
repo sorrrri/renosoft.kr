@@ -44,61 +44,62 @@
             </nav>
         </header>
 
-            <div class="bg-title rsm wow fadeInDown">                
+        <div class="bg-title rsm wow fadeInDown">
+            <div class="title">
                 <h1 class="heading">르노삼성 챗봇 개발</h1>
+                <div class="date wow fadeInUp" data-wow-delay=".8s">2019.01~2019.04</div>
             </div>
-            <article>
-                <div class="title">
-                    <div class="slider wow fadeInUp" data-wow-delay=".6s">
-                        <div>
-                            <img src="/images/works/rsm.jpg">
-                        </div>
-                        <div>
-                            <img src="/images/works/welstory.jpg">
-                        </div>
+        </div>
+        <article>
+            <div class="content">
+                <div class="slider wow fadeInUp" data-wow-delay=".6s">
+                    <div>
+                        <img src="/images/works/rsm.jpg">
                     </div>
-                    <p>르노삼성자동차 엔젤센터(르노삼성 VOC 전담조직)와 마케팅 부서의 전통적(대면-유선포함) B2C대응의 문제점을 개선하고 효과적인 서비스 제공을 재고하기 위해
-                        자동화 고객대응 및
-                        마케팅 채널로의 챗봇 시스템 구축 사업을 진행하였습니다.</p>
-
-                    <p>채팅봇을 통해 24시간 실시간 고객응대 및 인터렉티브(Interactive)한 마케팅을 고려하기 위해 기획된 사업으로 고객의 사용자 편의성을 증대 및 과도한
-                        업무 절감을 목적으로
-                        기획, 디자인, 개발요소 모든 부분에 간소함과 효율성을 중점으로 작업이 진행됐습니다.
-                    </p>
-                </div>
-                <div class="content wow fadeIn" data-wow-delay=".6s">
-                    <div class="table">
-                        <div class="row wow fadeInUp">
-                            <div>프로젝트</div>
-                            <div>르노삼성 챗봇 개발</div>
-                        </div>
-                        <div class="row wow fadeInUp" data-wow-delay=".8s">
-                            <div>개발환경</div>
-                            <div>Language / DBMS / Tool / OS</div>
-                        </div>
-                        <div class="row wow fadeInUp" data-wow-delay="1s">
-                            <div>부문</div>
-                            <div>Website / Mobile App&Web (Plan / Design / Publishing / Dev)</div>
-                        </div>
-                        <div class="row wow fadeInUp" data-wow-delay="1.2s">
-                            <div>고객</div>
-                            <div>르노삼성자동차</div>
-                        </div>
-                        <div class="row wow fadeInUp" data-wow-delay="1.4s">
-                            <div>사업기간</div>
-                            <div>2019.01~2019.04 (Open : 2019.04.12)</div>
-                        </div>
-                        <div class="row wow fadeInUp" data-wow-delay="1.6s">
-                            <div>URL</div>
-                            <div>https://alphabot-chat......</div>
-                        </div>
+                    <div>
+                        <img src="/images/works/welstory.jpg">
                     </div>
                 </div>
-            </article>
+                <p>르노삼성자동차 엔젤센터(르노삼성 VOC 전담조직)와 마케팅 부서의 전통적(대면-유선포함) B2C대응의 문제점을 개선하고 효과적인 서비스 제공을 재고하기 위해
+                    자동화 고객대응 및
+                    마케팅 채널로의 챗봇 시스템 구축 사업을 진행하였습니다.</p>
 
+                <p>채팅봇을 통해 24시간 실시간 고객응대 및 인터렉티브(Interactive)한 마케팅을 고려하기 위해 기획된 사업으로 고객의 사용자 편의성을 증대 및 과도한
+                    업무 절감을 목적으로
+                    기획, 디자인, 개발요소 모든 부분에 간소함과 효율성을 중점으로 작업이 진행됐습니다.
+                </p>
+            </div>
+            <div class="table wow fadeIn" data-wow-delay=".6s">
+                <div class="row wow fadeInUp">
+                    <div>프로젝트</div>
+                    <div>르노삼성 챗봇 개발</div>
+                </div>
+                <div class="row wow fadeInUp" data-wow-delay=".8s">
+                    <div>개발환경</div>
+                    <div>Language / DBMS / Tool / OS</div>
+                </div>
+                <div class="row wow fadeInUp" data-wow-delay="1s">
+                    <div>부문</div>
+                    <div>Website / Mobile App&Web (Plan / Design / Publishing / Dev)</div>
+                </div>
+                <div class="row wow fadeInUp" data-wow-delay="1.2s">
+                    <div>고객</div>
+                    <div>르노삼성자동차</div>
+                </div>
+                <div class="row wow fadeInUp" data-wow-delay="1.4s">
+                    <div>사업기간</div>
+                    <div>2019.01~2019.04 (Open : 2019.04.12)</div>
+                </div>
+                <div class="row wow fadeInUp" data-wow-delay="1.6s">
+                    <div>URL</div>
+                    <div>https://alphabot-chat......</div>
+                </div>
+            </div>
+        </article>
         <button class="arrow" onclick="history.back()">
             <ion-icon name="arrow-back"></ion-icon>뒤로가기
         </button>
+
     </div>
     <div class="modal-backdrop"></div>
     <div class="loading">Loading&#8230;</div>
@@ -121,6 +122,23 @@
             slidesToShow: 1,
             adaptiveHeight: true
         });
+
+        $(document).ready(function () {
+            $(window).scroll(function () {
+
+                let currentScroll = $(this).scrollTop();
+
+                if (currentScroll > $('article').offset().top) {
+                    $('.logo a').css('color', '#333');
+                    $('.toggle-menu li').css('background-color', '#333');
+                } else {
+                    $('.logo a').css('color', 'white');
+                    $('.toggle-menu li').css('background-color', 'white');
+                }
+            });
+
+        });
+
     </script>
 </body>
 

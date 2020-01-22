@@ -18,13 +18,12 @@ $(document).ready(function () {
 		$('.block-menu').addClass('active');
 	});
 	$('.close').on('click', function () {
-		ssssa;
 		$('.block-menu').removeClass('active');
 	});
 
 	$(window).scroll(function () {
 		var currentScroll = $(this).scrollTop();
-		if (currentScroll > 100) {
+		if (currentScroll > 80) {
 			$('.toggle-menu, .scroll-top').addClass('active');
 			$('.toggle-menu').removeClass('hidden');
 			$('header .menu').removeClass('active');
@@ -35,8 +34,8 @@ $(document).ready(function () {
 		}
 
 		var ypos = window.pageYOffset;
-		$('.intro').css("opacity", "1" + -ypos * .2);
-		$('.intro .menu').css("transform", "translateY(" + ypos * -.5 + "px)");
+		$('.intro').css("height", 100 - ypos * .1 + "vh");
+		$('.intro .menu, .intro .logo-big').css("transform", "translateY(" + ypos * -.5 + "px)");
 	});
 
 	$('a[href^="#"]').click(function () {
