@@ -1,11 +1,5 @@
-
 .intro .content { white-space: nowrap; } 
-
 .heading { white-space: nowrap; } 
-
-.about .parallax-logo { right:30%; position: absolute; top:20%; } 
-.about .parallax-logo img { opacity: .6; animation: moveUpDown 1s infinite alternate } 
-
 .about .content { word-break:keep-all; margin-top:1rem } 
 .about .content h1 { font-size:5vh } 
 
@@ -36,25 +30,34 @@
 .about.ci .ci-desc { flex: 0 0 50% } 
 .about.ci .ci-desc li { margin-bottom:2rem } 
 
+
+
+/* Clients */
 .about.clients .content { margin-top:10rem } 
 
+
+
+/* Culture */
 .about.culture .content { flex-direction: column; } 
 .about.culture .content .flex { justify-content: space-between; } 
 .about.culture .content .holiday { width:33.333% } 
 .about.culture .content .img-holiday { display:flex; margin-bottom:3rem; margin-bottom:10% } 
 .about.culture .content .img-holiday li { width:300px; min-height:500px; height:50vh; } 
-
 .about.culture .content .life { margin-bottom:2rem } 
 .about.culture .content .img-lounge { margin:0 -15% 10%; display:flex } 
 .about.culture .content .img-lounge li { width:50%; min-height:500px; height:20vh;} 
 
+
+
+/* Works */
 .works section { display:flex; flex-direction: row-reverse; } 
 .works .title { width:30%; position: fixed; top:10rem; left:10rem; overflow: hidden; } 
-
 .works .content { width:60%; } 
 .works .timeline.is-expanded { position: fixed; left: 0; top: 0; } 
 
 
+
+/* Contact */
 .contact { z-index: 3; } 
 .contact section { display:grid; display:-ms-grid; grid-template-columns: 2fr 3fr; -ms-grid-columns:2fr 3fr; width: calc(100% - 7px); } 
 .contact section > *:first-child { -ms-grid-column: 1; } 
