@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:700|Libre+Baskerville|Permanent+Marker|Poppins&display=swap'); @import url("https://fonts.googleapis.com/css?family=Questrial&display=swap"); @font-face { font-family: 'Nanum Square'; font-style: normal; font-weight: 400; src: url(../fonts/NanumSquareL.ttf); src: local('Nanum Square'),
+@import url('animate.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:700|Libre+Baskerville|Permanent+Marker|Poppins&display=swap'); 
+@import url("https://fonts.googleapis.com/css?family=Questrial&display=swap"); 
+@font-face { font-family: 'Nanum Square'; font-style: normal; font-weight: 400; src: url(../fonts/NanumSquareL.ttf); src: local('Nanum Square'),
  local('NanumSquare'),
  url(../fonts/NanumSquareR.ttf) format('truetype'),
  url(../fonts/NanumSquareR.woff) format('woff'),
