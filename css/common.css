@@ -182,7 +182,7 @@ h1 { font-size: 6vh; }
 
 .about .content-title { font-family: "Poppins"; } 
 .about.biz-area section { counter-reset:section; } 
-.about.biz-area .content li { margin-bottom:3rem; position:relative; display:flex } 
+.about.biz-area .content li { margin-bottom:10%; position:relative; display:flex } 
 .about.biz-area .content li::before { font-family: "Poppins"; z-index: -1; counter-increment: section; content: "0" counter(section); display: block; position: absolute; line-height: 1; font-size: 13vh; top:0; left:0; color: rgba(255,255,255,.5) } 
 .about.biz-area .content-title { font-family: "Poppins"; flex:0 0 25% } 
 .about.biz-area .content li:last-of-type .content-title { font-size:40px } 
